@@ -1,0 +1,57 @@
+<air:AirPriceRsp xmlns:air="http://www.travelport.com/schema/air_v33_0" xmlns:common_v33_0="http://www.travelport.com/schema/common_v33_0" TraceId="1ed15072-45a0-4327-87f4-b26632a1971b" TransactionId="A56AF7600A07643BD914C58AAFCF0BA8" ResponseTime="3502">
+    <common_v33_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [SU][265]</common_v33_0:ResponseMessage>
+    <common_v33_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional services returned for Flight(s) [SU][2134]</common_v33_0:ResponseMessage>
+    <air:AirItinerary>
+        <air:AirSegment Key="XEpGkEn6R3iFa0VSY5MGGA==" Group="0" Carrier="SU" FlightNumber="265" ProviderCode="1G" Origin="NRT" Destination="SVO" DepartureTime="2015-12-17T13:10:00.000+09:00" ArrivalTime="2015-12-17T17:35:00.000+03:00" FlightTime="625" TravelTime="625" Distance="4664" ClassOfService="T" ChangeOfPlane="false" OptionalServicesIndicator="false" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+            <air:FlightDetails Key="zn2HX9PyR6mj8FHdCIB6rg==" Origin="NRT" Destination="SVO" DepartureTime="2015-12-17T13:10:00.000+09:00" ArrivalTime="2015-12-17T17:35:00.000+03:00" FlightTime="625" TravelTime="625" Distance="4664" />
+        </air:AirSegment>
+        <air:AirSegment Key="QaFnnmPsTteimc0doScEEQ==" Group="0" Carrier="SU" FlightNumber="2134" ProviderCode="1G" Origin="SVO" Destination="IST" DepartureTime="2015-12-17T21:45:00.000+03:00" ArrivalTime="2015-12-18T00:30:00.000+02:00" FlightTime="225" TravelTime="225" Distance="1089" ClassOfService="T" ChangeOfPlane="false" OptionalServicesIndicator="false" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+            <air:FlightDetails Key="E+rAO4AsRZK4F5PJbEixcw==" Origin="SVO" Destination="IST" DepartureTime="2015-12-17T21:45:00.000+03:00" ArrivalTime="2015-12-18T00:30:00.000+02:00" FlightTime="225" TravelTime="225" Distance="1089" />
+        </air:AirSegment>
+    </air:AirItinerary>
+    <air:AirPriceResult>
+        <air:AirPricingSolution Key="a1hFX86RRhSMZVfNx6yoPQ==" TotalPrice="GBP383.60" BasePrice="JPY53200" ApproximateTotalPrice="GBP383.60" ApproximateBasePrice="GBP286.00" EquivalentBasePrice="GBP286.00" Taxes="GBP97.60" ApproximateTaxes="GBP97.60" QuoteDate="2015-12-15">
+            <air:AirSegmentRef Key="XEpGkEn6R3iFa0VSY5MGGA==" />
+            <air:AirSegmentRef Key="QaFnnmPsTteimc0doScEEQ==" />
+            <air:AirPricingInfo Key="RiftOOiiT+OMmM0N7uIvNg==" TotalPrice="GBP214.60" BasePrice="JPY30400" ApproximateTotalPrice="GBP214.60" ApproximateBasePrice="GBP163.00" EquivalentBasePrice="GBP163.00" ApproximateTaxes="GBP51.60" Taxes="GBP51.60" LatestTicketingTime="2015-12-16T23:59:00.000+00:00" PricingMethod="Guaranteed" IncludesVAT="false" ProviderCode="1G">
+                <air:FareInfo Key="OLq16aNaTwu05nfo8fId2Q==" FareBasis="TPXOW" PassengerTypeCode="ADT" Origin="NRT" Destination="IST" EffectiveDate="2015-12-15T11:33:00.000+00:00" DepartureDate="2015-12-17" Amount="GBP163.00" NotValidBefore="2015-12-17" NotValidAfter="2015-12-17">
+                    <air:FareRuleKey FareInfoRef="OLq16aNaTwu05nfo8fId2Q==" ProviderCode="1G">6UUVoSldxwjlyt4REEYEFMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovAz+h4HL8/lD9M3ExqSoG051ZYJWJHEWKGJLYkVtcVqgTQu0ZscBMSQ4zlTqIWoxcTtdpt3EZnTu6CZCE5EFPPimF/oTXxxF6MeJYtF79PC3YfoLT9JoAKrO7eP3a4bhHZNndpxuHcfNSCkJQE184nnbg2BMJ0qOmdTyy/Q52QOiIeGkxAlW4WMTWqy44qLn8S/wBShF29N4Sv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx8Qxibp/OJehpo2LrM59tO1jp8ZENljzx735+mk06MHbNbph6R864Mapb/JUnrGwUseyuta94zhnYIbenQB1hM0</air:FareRuleKey>
+                </air:FareInfo>
+                <air:BookingInfo BookingCode="T" CabinClass="Economy" FareInfoRef="OLq16aNaTwu05nfo8fId2Q==" SegmentRef="XEpGkEn6R3iFa0VSY5MGGA==" />
+                <air:BookingInfo BookingCode="T" CabinClass="Economy" FareInfoRef="OLq16aNaTwu05nfo8fId2Q==" SegmentRef="QaFnnmPsTteimc0doScEEQ==" />
+                <air:TaxInfo Category="OI" Amount="GBP2.80" Key="bg7m0lT4R5eiG4VlqAwpuQ==" />
+                <air:TaxInfo Category="SW" Amount="GBP11.20" Key="3Olei46sRjOAkbDB4FftGg==" />
+                <air:TaxInfo Category="YQ" Amount="GBP37.60" Key="tHs1toEbRzq3gIkM8JsMYQ==" />
+                <air:PassengerType Code="ADT" Age="40" />
+                <air:BaggageAllowances>
+                    <air:BaggageAllowanceInfo Origin="NRT" Destination="SVO" Carrier="SU">
+                        <air:TextInfo>
+                            <air:Text>1PC</air:Text>
+                            <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+                        </air:TextInfo>
+                    </air:BaggageAllowanceInfo>
+                </air:BaggageAllowances>
+            </air:AirPricingInfo>
+            <air:AirPricingInfo Key="0oTUu4TXRb+NGHFY+10p/A==" TotalPrice="GBP169.00" BasePrice="JPY22800" ApproximateTotalPrice="GBP169.00" ApproximateBasePrice="GBP123.00" EquivalentBasePrice="GBP123.00" ApproximateTaxes="GBP46.00" Taxes="GBP46.00" LatestTicketingTime="2015-12-16T23:59:00.000+00:00" PricingMethod="Guaranteed" IncludesVAT="false" ProviderCode="1G">
+                <air:FareInfo Key="s9inO13sRS2wmbaBE9yefQ==" FareBasis="TPXOW" PassengerTypeCode="CNN" Origin="NRT" Destination="IST" EffectiveDate="2015-12-15T11:33:00.000+00:00" DepartureDate="2015-12-17" Amount="GBP123.00" NotValidBefore="2015-12-17" NotValidAfter="2015-12-17">
+                    <air:FareTicketDesignator Value="CH25" />
+                    <air:FareRuleKey FareInfoRef="s9inO13sRS2wmbaBE9yefQ==" ProviderCode="1G">6UUVoSldxwjlyt4REEYEFMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovAz+h4HL8/lD9M3ExqSoG051ZYJWJHEWKGCTCnzSKt437Qu0ZscBMSQ4zlTqIWoxcTtdpt3EZnTu6CZCE5EFPPimF/oTXxxF6MeJYtF79PC3Y84PrlTL+yY27eP3a4bhHZNndpxuHcfNSCkJQE184nnbg2BMJ0qOmdTyy/Q52QOiI0WrwzdEru1+0c88z+dpwW/wBShF29N4Sv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx8Qxibp/OJehpo2LrM59tO1jp8ZENljzx735+mk06MHbLM+nHMPUeYspb/JUnrGwUseyuta94zhnYIbenQB1hM0</air:FareRuleKey>
+                </air:FareInfo>
+                <air:BookingInfo BookingCode="T" CabinClass="Economy" FareInfoRef="s9inO13sRS2wmbaBE9yefQ==" SegmentRef="XEpGkEn6R3iFa0VSY5MGGA==" />
+                <air:BookingInfo BookingCode="T" CabinClass="Economy" FareInfoRef="s9inO13sRS2wmbaBE9yefQ==" SegmentRef="QaFnnmPsTteimc0doScEEQ==" />
+                <air:TaxInfo Category="OI" Amount="GBP2.80" Key="doIYDZ/CT9mveG5JbTjRIA==" />
+                <air:TaxInfo Category="SW" Amount="GBP5.60" Key="11N5twbgQlCzuALDWY5nYw==" />
+                <air:TaxInfo Category="YQ" Amount="GBP37.60" Key="1fu/iAPiQ5ulLooWo5NQYQ==" />
+                <air:PassengerType Code="CNN" Age="10" />
+                <air:BaggageAllowances>
+                    <air:BaggageAllowanceInfo Origin="NRT" Destination="SVO" Carrier="SU">
+                        <air:TextInfo>
+                            <air:Text>1PC</air:Text>
+                            <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+                        </air:TextInfo>
+                    </air:BaggageAllowanceInfo>
+                </air:BaggageAllowances>
+            </air:AirPricingInfo>
+        </air:AirPricingSolution>
+    </air:AirPriceResult>
+</air:AirPriceRsp>

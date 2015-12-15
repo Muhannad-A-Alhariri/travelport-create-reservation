@@ -1,0 +1,25 @@
+<AirPriceReq xmlns="http://www.travelport.com/schema/air_v33_0" TraceId="1ed15072-45a0-4327-87f4-b26632a1971b" AuthorizedBy="Travelport" TargetBranch="P105273">
+    <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v33_0" OriginApplication="uAPI" />
+    <AirItinerary>
+        <AirSegment Key="dZcM/RAXTmmmvxwIRKSpnw==" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop" Group="0" Carrier="SU" FlightNumber="265" Origin="NRT" Destination="SVO" DepartureTime="2015-12-17T13:10:00.000+09:00" ArrivalTime="2015-12-17T17:35:00.000+03:00" FlightTime="625" Distance="4664" ProviderCode="1G" ClassOfService="T" />
+        <AirSegment Key="1ePvlGyKT/Gx/HkwEIj0xA==" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop" Group="0" Carrier="SU" FlightNumber="2134" Origin="SVO" Destination="IST" DepartureTime="2015-12-17T21:45:00.000+03:00" ArrivalTime="2015-12-18T00:30:00.000+02:00" FlightTime="225" Distance="1089" ProviderCode="1G" ClassOfService="T" />
+    </AirItinerary>
+    <AirPricingModifiers InventoryRequestType="DirectAccess">
+        <BrandModifiers ModifierType="FareFamilyDisplay" />
+    </AirPricingModifiers>
+    <SearchPassenger xmlns="http://www.travelport.com/schema/common_v33_0" Code="ADT" Age="40" BookingTravelerRef="emt6Ymh2Tlh1SEFYOW5rQw==" Key="emt6Ymh2Tlh1SEFYOW5rQw==" />
+    <SearchPassenger xmlns="http://www.travelport.com/schema/common_v33_0" Code="CNN" Age="10" BookingTravelerRef="bURDcm9GRENKQ0JLZ1p3YQ==" Key="bURDcm9GRENKQ0JLZ1p3YQ==" />
+    <AirPricingCommand>
+        <AirSegmentPricingModifiers AirSegmentRef="dZcM/RAXTmmmvxwIRKSpnw==" FareBasisCode="TPXOW">
+            <PermittedBookingCodes>
+                <BookingCode Code="T" />
+            </PermittedBookingCodes>
+        </AirSegmentPricingModifiers>
+        <AirSegmentPricingModifiers AirSegmentRef="1ePvlGyKT/Gx/HkwEIj0xA==" FareBasisCode="TPXOW">
+            <PermittedBookingCodes>
+                <BookingCode Code="T" />
+            </PermittedBookingCodes>
+        </AirSegmentPricingModifiers>
+    </AirPricingCommand>
+    <FormOfPayment xmlns="http://www.travelport.com/schema/common_v33_0" Type="Credit" />
+</AirPriceReq>
