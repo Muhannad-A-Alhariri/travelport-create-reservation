@@ -1,0 +1,80 @@
+<universal:AirCancelRsp xmlns:universal="http://www.travelport.com/schema/universal_v33_0" xmlns:common_v33_0="http://www.travelport.com/schema/common_v33_0" xmlns:air="http://www.travelport.com/schema/air_v33_0" TraceId="92799455-dc55-44cd-83a2-04c0aff9d9ba" TransactionId="A4AA15EF0A0764781598177899ADCB34" ResponseTime="1225">
+    <common_v33_0:ResponseMessage Code="0" Type="Info">Itinerary Cancelled</common_v33_0:ResponseMessage>
+    <common_v33_0:ResponseMessage Code="1" Type="Warning" ProviderCode="1G">ITIN CHANGE - FILED FARES CANCELLED</common_v33_0:ResponseMessage>
+    <universal:UniversalRecord LocatorCode="KB50J7" Version="2" Status="Active">
+        <common_v33_0:BookingTraveler Key="bTFGUmdKVzBOSjlVNlV6NQ==" TravelerType="ADT" Age="40" DOB="1975-12-15" Gender="M">
+            <common_v33_0:BookingTravelerName Prefix="Mr" First="John" Last="Smith" />
+            <common_v33_0:DeliveryInfo>
+                <common_v33_0:ShippingAddress Key="bTFGUmdKVzBOSjlVNlV6NQ==">
+                    <common_v33_0:AddressName>JOHNMR SMITH</common_v33_0:AddressName>
+                    <common_v33_0:Street>Via Augusta 59 5</common_v33_0:Street>
+                    <common_v33_0:City>Madrid</common_v33_0:City>
+                    <common_v33_0:State>IA</common_v33_0:State>
+                    <common_v33_0:PostalCode>50156</common_v33_0:PostalCode>
+                    <common_v33_0:Country>US</common_v33_0:Country>
+                    <common_v33_0:ProviderReservationInfoRef Key="QNBV2qcSR5edvLZ3EoJurA==" />
+                </common_v33_0:ShippingAddress>
+                <common_v33_0:ProviderReservationInfoRef Key="QNBV2qcSR5edvLZ3EoJurA==" />
+            </common_v33_0:DeliveryInfo>
+            <common_v33_0:PhoneNumber Key="Est3ZmjLSmyWy9U3oB3XYw==" Type="None" Location="DEN" CountryCode="1" Number="123456789" AreaCode="303">
+                <common_v33_0:ProviderReservationInfoRef Key="QNBV2qcSR5edvLZ3EoJurA==" />
+            </common_v33_0:PhoneNumber>
+            <common_v33_0:Email Key="io27fOv/QWGHMOnnR+4GGw==" EmailID="johnsmith@travelportuniversalapidemo.com">
+                <common_v33_0:ProviderReservationInfoRef Key="QNBV2qcSR5edvLZ3EoJurA==" />
+            </common_v33_0:Email>
+            <common_v33_0:Address Key="g7ANsRJnQ4eIkJEsXHlwEQ==">
+                <common_v33_0:AddressName>DemoSiteAddress</common_v33_0:AddressName>
+                <common_v33_0:Street>Via Augusta 59 5</common_v33_0:Street>
+                <common_v33_0:City>Madrid</common_v33_0:City>
+                <common_v33_0:State>IA</common_v33_0:State>
+                <common_v33_0:PostalCode>50156</common_v33_0:PostalCode>
+                <common_v33_0:Country>US</common_v33_0:Country>
+                <common_v33_0:ProviderReservationInfoRef Key="QNBV2qcSR5edvLZ3EoJurA==" />
+            </common_v33_0:Address>
+        </common_v33_0:BookingTraveler>
+        <common_v33_0:BookingTraveler Key="WENSekhYWGE1cXFnVGtGcA==" TravelerType="ADT" Age="40" DOB="1975-12-15" Gender="M">
+            <common_v33_0:BookingTravelerName Prefix="Mr" First="Michael" Last="Scott" />
+            <common_v33_0:PhoneNumber Key="dNeFAD8WQPqyZ8JBp7y06w==" Type="None" Location="DEN" CountryCode="1" Number="123456789" AreaCode="303">
+                <common_v33_0:ProviderReservationInfoRef Key="QNBV2qcSR5edvLZ3EoJurA==" />
+            </common_v33_0:PhoneNumber>
+            <common_v33_0:Email Key="QFCUruppQquW4ZHLlFqBVg==" EmailID="MichaelScott@travelportuniversalapidemo.com">
+                <common_v33_0:ProviderReservationInfoRef Key="QNBV2qcSR5edvLZ3EoJurA==" />
+            </common_v33_0:Email>
+            <common_v33_0:Address Key="OEW9c/fTQ8a+tw/HUlHN2g==">
+                <common_v33_0:AddressName>DemoSiteAddress</common_v33_0:AddressName>
+                <common_v33_0:Street>Via Augusta 59 5</common_v33_0:Street>
+                <common_v33_0:City>Madrid</common_v33_0:City>
+                <common_v33_0:State>IA</common_v33_0:State>
+                <common_v33_0:PostalCode>50156</common_v33_0:PostalCode>
+                <common_v33_0:Country>US</common_v33_0:Country>
+            </common_v33_0:Address>
+        </common_v33_0:BookingTraveler>
+        <universal:ProviderReservationInfo Key="QNBV2qcSR5edvLZ3EoJurA==" ProviderCode="1G" LocatorCode="7JTHNU" CreateDate="2015-12-15T08:02:47.010+00:00" ModifiedDate="2015-12-15T08:03:10.350+00:00" HostCreateDate="2015-12-15" OwningPCC="6FX6" />
+        <air:AirReservation LocatorCode="M9L407" CreateDate="2015-12-15T08:02:46.711+00:00" ModifiedDate="2015-12-15T08:03:10.350+00:00">
+            <common_v33_0:SupplierLocator SupplierCode="AF" SupplierLocatorCode="23YCNL" ProviderReservationInfoRef="QNBV2qcSR5edvLZ3EoJurA==" CreateDateTime="2015-12-15T08:02:00.000+00:00" />
+            <common_v33_0:BookingTravelerRef Key="bTFGUmdKVzBOSjlVNlV6NQ==" />
+            <common_v33_0:BookingTravelerRef Key="WENSekhYWGE1cXFnVGtGcA==" />
+            <common_v33_0:ProviderReservationInfoRef Key="QNBV2qcSR5edvLZ3EoJurA==" />
+        </air:AirReservation>
+        <common_v33_0:GeneralRemark Key="RFE31PUvSmat1urAfLaMAQ==" Category="Vendor" TypeInGds="Vendor" SupplierType="Air" ProviderReservationInfoRef="QNBV2qcSR5edvLZ3EoJurA==" SupplierCode="AF" Direction="Incoming" CreateDate="2015-12-15T08:02:00.000+00:00" ElStat="A">
+            <common_v33_0:RemarkData>ADTK1GTOAF BY 16DEC 0900 OTHERWISE WILL BE XLD</common_v33_0:RemarkData>
+        </common_v33_0:GeneralRemark>
+        <common_v33_0:AgencyInfo>
+            <common_v33_0:AgentAction ActionType="Created" AgentCode="UAPI3839144488" BranchCode="P105219" AgencyCode="S30338" EventTime="2015-12-15T08:02:41.538+00:00" />
+            <common_v33_0:AgentAction ActionType="Modified" AgentCode="UAPI3839144488" BranchCode="P105219" AgencyCode="S30338" EventTime="2015-12-15T08:03:09.787+00:00" />
+        </common_v33_0:AgencyInfo>
+        <common_v33_0:FormOfPayment Key="LxRCrM09RYCQUtAs9UQPDQ==" Type="Credit" Reusable="true" ProfileKey="5BIsj+JJRiKbeuHsKD3d2A==">
+            <common_v33_0:CreditCard Type="VI" Number="************1111" ExpDate="2015-12" Name="John Smith">
+                <common_v33_0:BillingAddress Key="aLxwLsGJSLqokr0snAPs4w==">
+                    <common_v33_0:AddressName>DemoSiteAddress</common_v33_0:AddressName>
+                    <common_v33_0:Street>Via Augusta 59 5</common_v33_0:Street>
+                    <common_v33_0:City>Madrid</common_v33_0:City>
+                    <common_v33_0:State>IA</common_v33_0:State>
+                    <common_v33_0:PostalCode>50156</common_v33_0:PostalCode>
+                    <common_v33_0:Country>US</common_v33_0:Country>
+                </common_v33_0:BillingAddress>
+            </common_v33_0:CreditCard>
+            <common_v33_0:ProviderReservationInfoRef Key="QNBV2qcSR5edvLZ3EoJurA==" />
+        </common_v33_0:FormOfPayment>
+    </universal:UniversalRecord>
+</universal:AirCancelRsp>

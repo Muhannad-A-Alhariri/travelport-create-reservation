@@ -1,0 +1,103 @@
+<!--Version Dated as of 10/Sep/2015 20:08:02-->
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP:Body>
+        <air:AirMerchandisingOfferAvailabilityRsp
+            xmlns:air="http://www.travelport.com/schema/air_v33_0"
+            xmlns:common_v33_0="http://www.travelport.com/schema/common_v33_0"
+            ResponseTime="3784" TraceId="trace"
+            TransactionId="97860E290A07761FF695B2F6D98FEAF9">
+            <common_v33_0:ResponseMessage Code="0" Type="Warning">SERVICES
+                RELATED TO THE FARE MAY EXIST - MUST PRICE THE PNR
+            </common_v33_0:ResponseMessage>
+            <air:AirSolution>
+                <air:AirSegment ArrivalTime="2015-11-27T18:10:00.000-05:00"
+                                CabinClass="Economy" Carrier="DL"
+                                ChangeOfPlane="false" ClassOfService="Q"
+                                DepartureTime="2015-11-27T13:15:00.000-07:00"
+                                Destination="ATL" Distance="1207"
+                                ETicketability="Yes" Equipment="737"
+                                FlightNumber="1916" Group="0"
+                                GuaranteedPaymentCarrier="No"
+                                Key="cyzNMEVmRZuxcB6l1MhmOw=="
+                                LinkAvailability="true"
+                                OptionalServicesIndicator="true" Origin="DEN"
+                                ParticipantLevel="Secure Sell" ProviderCode="1G"
+                                Status="HK" TravelOrder="1" TravelTime="175">
+                    <air:FlightDetails
+                        ArrivalTime="2015-11-27T18:10:00.000-05:00"
+                        DepartureTime="2015-11-27T13:15:00.000-07:00"
+                        Destination="ATL" DestinationTerminal="S"
+                        Equipment="757" FlightTime="175"
+                        Key="Fn301iT0TOmWf9Tl+zpkhg==" Origin="DEN"
+                        TravelTime="175"/>
+                    <common_v33_0:SellMessage>ARRIVES ATL TERMINAL S
+                    </common_v33_0:SellMessage>
+                    <common_v33_0:SellMessage>*6**SKY PRIORITY IN F*
+                    </common_v33_0:SellMessage>
+                </air:AirSegment>
+            </air:AirSolution>
+            <common_v33_0:Remark>Ancillary Services</common_v33_0:Remark>
+            <air:OptionalServices>
+                <air:OptionalServicesTotal/>
+                <air:OptionalService ApproximateBasePrice="AUD102.0"
+                                     ApproximateTotalPrice="AUD102.0"
+                                     Available="true" BasePrice="AUD102.0"
+                                     CreateDate="2015-09-04T08:43:13.066+00:00"
+                                     DisplayText="Seat"
+                                     OptionalServicesRuleRef="4wxlRRxJTMqbi0uxzZe79g=="
+                                     PerTraveler="true" ProviderCode="ACH"
+                                     ProviderDefinedType="SA__ECDO" Quantity="1"
+                                     ServiceStatus="Offered" Source="ACH"
+                                     SupplierCode="DL" TotalPrice="AUD102.0"
+                                     Type="PreReservedSeatAssignment">
+                    <common_v33_0:ServiceData
+                        AirSegmentRef="cyzNMEVmRZuxcB6l1MhmOw=="/>
+                    <common_v33_0:ServiceInfo>
+                        <common_v33_0:Description>Domestic Economy Comfort
+                            Seat
+                        </common_v33_0:Description>
+                        <common_v33_0:Description>PNR must be ticketed within
+                            the TTL or seat will be canceled
+                        </common_v33_0:Description>
+                    </common_v33_0:ServiceInfo>
+                    <common_v33_0:Remark>DL 1916 - AUD102.0 PER PASSENGER
+                        Domestic Economy Comfort Seat
+                    </common_v33_0:Remark>
+                </air:OptionalService>
+                <air:OptionalServiceRules Key="4wxlRRxJTMqbi0uxzZe79g==">
+                    <common_v33_0:ApplicationRules
+                        RequiredForAllSegments="false"
+                        RequiredForAllSegmentsInOD="false"
+                        RequiredForAllTravelers="false"
+                        SecondaryOptionCodeRequired="false"
+                        UnselectedOptionRequired="false"/>
+                    <common_v33_0:ApplicationLevel
+                        ApplicableLevels="PassengerSegment">
+                        <common_v33_0:ApplicationLimits>
+                            <common_v33_0:ApplicationLimit
+                                ApplicableLevel="PassengerSegment"
+                                MaximumQuantity="1"/>
+                            <common_v33_0:ApplicationLimit
+                                ApplicableLevel="Passenger"
+                                MaximumQuantity="9"/>
+                            <common_v33_0:ApplicationLimit
+                                ApplicableLevel="Segment" MaximumQuantity="8"/>
+                            <common_v33_0:ApplicationLimit
+                                ApplicableLevel="Itinerary"
+                                MaximumQuantity="72"/>
+                        </common_v33_0:ApplicationLimits>
+                        <common_v33_0:ServiceData BookingTravelerRef="1"/>
+                        <common_v33_0:ServiceData
+                            AirSegmentRef="a/UBRMvbTbCHuzfIbsNKJA=="/>
+                    </common_v33_0:ApplicationLevel>
+                    <common_v33_0:ModifyRules>
+                        <common_v33_0:ModifyRule
+                            AutomaticallyAppliedOnAdd="false" CanAdd="true"
+                            CanDelete="false" Modification="OptionsOnly"
+                            Refundable="true"/>
+                    </common_v33_0:ModifyRules>
+                </air:OptionalServiceRules>
+            </air:OptionalServices>
+        </air:AirMerchandisingOfferAvailabilityRsp>
+    </SOAP:Body>
+</SOAP:Envelope>

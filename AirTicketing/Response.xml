@@ -1,0 +1,118 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP:Body>
+        <air:AirTicketingRsp xmlns:air="http://www.travelport.com/schema/air_v33_0" xmlns:common_v33_0="http://www.travelport.com/schema/common_v33_0" ResponseTime="3852" TraceId="trace" TransactionId="90720D230A07761E5CED3803C2B61A11">
+            <common_v33_0:ResponseMessage Code="0" ProviderCode="1G" Type="Info">
+                PNR LB6PJG Fare 1 - ELECTRONIC TKT GENERATED TTL FARE AUD 234.99 SUPPORTING DOCUMENTS GENERATED MIR GENERATED - TTL FARE AUD 234.99 ------------------------------------- ITINERARY/INVOICE GENERATED
+            </common_v33_0:ResponseMessage>
+            <common_v33_0:ResponseMessage Code="0" ProviderCode="1G" Type="Info">OK:Ticket issued</common_v33_0:ResponseMessage>
+            <air:ETR BasePrice="AUD200.24" ElStat="A" Exchangeable="true" IATANumber="24306111" IssuedDate="2015-05-26T00:00:00.000-07:00" Key="HJaYZTduTV6U0uSP+YoXCQ==" PlatingCarrier="QF" ProviderCode="1G" ProviderLocatorCode="LB6PJG" PseudoCityCode="PCC" Refundable="false" Taxes="AUD34.75">
+                <air:AirReservationLocatorCode>DXCW6Q</air:AirReservationLocatorCode>
+                <common_v33_0:AgencyInfo>
+                    <common_v33_0:AgentAction ActionType="Created" AgencyCode="AGCY_CODE" AgentCode="AGNT_CODE" BranchCode="BRCH_CODE" EventTime="2015-05-26T00:00:00.000-07:00"/>
+                </common_v33_0:AgencyInfo>
+                <common_v33_0:BookingTraveler DOB="1969-09-17" Gender="M" Key="gr8AVWGCR064r57Jt0+8bA==" TravelerType="ADT">
+                    <common_v33_0:BookingTravelerName First="Jack" Last="Smith" Prefix="Mr"/>
+                    <common_v33_0:DeliveryInfo>
+                        <common_v33_0:ShippingAddress Key="eQtIqPItREGFmDzeW3uWQQ==">
+                            <common_v33_0:AddressName>Smiths</common_v33_0:AddressName>
+                            <common_v33_0:Street>2914 N. Dakota Avenue</common_v33_0:Street>
+                            <common_v33_0:City>Denver</common_v33_0:City>
+                            <common_v33_0:State>CO</common_v33_0:State>
+                            <common_v33_0:PostalCode>80206</common_v33_0:PostalCode>
+                            <common_v33_0:Country>US</common_v33_0:Country>
+                            <common_v33_0:ProviderReservationInfoRef Key="FGUxBrP4TEWyYy7/918uTw=="/>
+                        </common_v33_0:ShippingAddress>
+                        <common_v33_0:ProviderReservationInfoRef Key="FGUxBrP4TEWyYy7/918uTw=="/>
+                    </common_v33_0:DeliveryInfo>
+                    <common_v33_0:PhoneNumber AreaCode="303" CountryCode="1" Key="RR26FWW+R8mKjXrvEL262g==" Location="DEN" Number="3333333" Type="None">
+                        <common_v33_0:ProviderReservationInfoRef Key="FGUxBrP4TEWyYy7/918uTw=="/>
+                    </common_v33_0:PhoneNumber>
+                    <common_v33_0:Email EmailID="test@travelport.com" Key="hstnADTBT6+dsNrFX0nJtQ==" Type="Home">
+                        <common_v33_0:ProviderReservationInfoRef Key="FGUxBrP4TEWyYy7/918uTw=="/>
+                    </common_v33_0:Email>
+                    <common_v33_0:SSR Carrier="QF" FreeText="P/IN/F1234567/IN/17SEP69/M/17JUL15/SMITH/JACK -1SMITH/JACKMR" Key="wFleTBHsTyO4oF7Uh+twDA==" ProviderReservationInfoRef="FGUxBrP4TEWyYy7/918uTw==" Status="HK" Type="DOCS"/>
+                    <common_v33_0:SSR Carrier="QF" ElStat="A" FreeText="0819902528834C1" Key="USZdxx50Stm+r1ukVKtxtA==" ProviderReservationInfoRef="FGUxBrP4TEWyYy7/918uTw==" SegmentRef="5ttGMLfXSQGk62HP0S5Gxw==" Status="HK" Type="TKNE"/>
+                    <common_v33_0:Address Key="hyxzBtwcQxmqmDGvniVRww==">
+                        <common_v33_0:AddressName>Smiths</common_v33_0:AddressName>
+                        <common_v33_0:Street>2914 N. Dakota Avenue</common_v33_0:Street>
+                        <common_v33_0:City>Denver</common_v33_0:City>
+                        <common_v33_0:State>CO</common_v33_0:State>
+                        <common_v33_0:PostalCode>80206</common_v33_0:PostalCode>
+                        <common_v33_0:Country>US</common_v33_0:Country>
+                        <common_v33_0:ProviderReservationInfoRef Key="FGUxBrP4TEWyYy7/918uTw=="/>
+                    </common_v33_0:Address>
+                </common_v33_0:BookingTraveler>
+                <common_v33_0:FormOfPayment Key="jwt2mcK1Qp27I2xfpcCtAw==" ProfileKey="ybr3hW6MTjm7zdVDJHfGyQ==" Reusable="false" Type="Cash"/>
+                <common_v33_0:Payment Amount="AUD234.99" FormOfPaymentRef="jwt2mcK1Qp27I2xfpcCtAw==" Key="P0T5lBLgRQOVU3D2WjG7TA==" Type="Itinerary"/>
+                <common_v33_0:SupplierLocator SupplierCode="QF" SupplierLocatorCode="YO89S8"/>
+                <air:FareCalc>SYD QF MEL 200.24 AUD200.24END</air:FareCalc>
+                <air:Ticket ElStat="A" Key="YBQHT4YFTLCIn5oXLCX4Lw==" TicketNumber="0819902528834" TicketStatus="N">
+                    <air:Coupon BookingClass="S" CouponNumber="1" DepartureTime="2015-06-29T06:00:00.000+10:00" Destination="MEL" ElStat="A" FareBasis="SDEAL" Key="yETz2xLSTO6Vn4qRkNfg0w==" MarketingCarrier="QF" MarketingFlightNumber="401" MarriageGroup="0" NotValidAfter="2015-06-29" NotValidBefore="2015-06-29" Origin="SYD" SegmentGroup="0" Status="O" StopoverCode="true"/>
+                </air:Ticket>
+                <air:AirPricingInfo AirPricingInfoGroup="1" ApproximateBasePrice="USD159.65" ApproximateTotalPrice="USD187.36" BasePrice="AUD200.24" ETicketability="Yes" Exchangeable="true" Key="B0wqpjg8TYazWWmbJ/+/9A==" LatestTicketingTime="2015-05-26T23:59:00.000-07:00" PlatingCarrier="QF" PricingMethod="GuaranteedUsingAirlinePrivateFare" PricingType="StoredFare" ProviderReservationInfoRef="FGUxBrP4TEWyYy7/918uTw==" Taxes="AUD34.75" Ticketed="true" TotalPrice="AUD234.99" TrueLastDateToTicket="2015-05-26T23:59:00.000-07:00">
+                    <air:FareInfo Amount="AUD200.24" Destination="MEL" EffectiveDate="2015-05-26T00:00:00.000-07:00" FareBasis="SDEAL" Key="prFONmDQRZGbURSyxOenMA==" NotValidAfter="2015-06-29" NotValidBefore="2015-06-29" Origin="SYD" PassengerTypeCode="ADT">
+                        <air:ContractCode Code="9684" ProviderCode="1G"/>
+                        <common_v33_0:Endorsement Value="NON-REF/NON-END"/>
+                        <common_v33_0:Endorsement Value="SPECIAL FARE CONDITIONS"/>
+                        <air:BaggageAllowance>
+                            <air:NumberOfPieces>1</air:NumberOfPieces>
+                            <air:MaxWeight/>
+                        </air:BaggageAllowance>
+                    </air:FareInfo>
+                    <air:BookingInfo BookingCode="S" CabinClass="Economy" FareInfoRef="prFONmDQRZGbURSyxOenMA=="/>
+                    <air:TaxInfo Amount="AUD7.86" Category="QR" Key="LD8YLjN3QLWZuIhpR704ZQ=="/>
+                    <air:TaxInfo Amount="AUD5.53" Category="WG" Key="sUHhN30iSg+7eREY3TNrHg=="/>
+                    <air:TaxInfo Amount="AUD21.36" Category="UO" Key="HSJ4rOaFRNet4728Tq3EmQ=="/>
+                    <air:FareCalc>SYD QF MEL 200.24SDEAL AUD200.24END</air:FareCalc>
+                    <air:PassengerType BookingTravelerRef="gr8AVWGCR064r57Jt0+8bA==" Code="ADT">
+                        <air:FareGuaranteeInfo GuaranteeType="GuaranteedUsingAirlinePrivateFare"/>
+                    </air:PassengerType>
+                    <common_v33_0:BookingTravelerRef Key="gr8AVWGCR064r57Jt0+8bA=="/>
+                    <air:ChangePenalty>
+                        <air:Amount>USD0.00</air:Amount>
+                    </air:ChangePenalty>
+                    <air:CancelPenalty>
+                        <air:Amount>USD0.00</air:Amount>
+                    </air:CancelPenalty>
+                </air:AirPricingInfo>
+                <air:BaggageAllowances>
+                    <air:BaggageAllowanceInfo Carrier="QF" Destination="MEL" Origin="SYD" TravelerType="ADT">
+                        <air:URLInfo>
+                            <air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSQF.BAGG</air:URL>
+                        </air:URLInfo>
+                        <air:TextInfo>
+                            <air:Text>1P</air:Text>
+                            <air:Text>
+                                BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.
+                            </air:Text>
+                        </air:TextInfo>
+                        <air:BagDetails ApplicableBags="1stChecked">
+                            <air:BaggageRestriction>
+                                <air:TextInfo>
+                                    <air:Text>BAGGAGE CHARGES DATA NOT AVAILABLE</air:Text>
+                                </air:TextInfo>
+                            </air:BaggageRestriction>
+                        </air:BagDetails>
+                        <air:BagDetails ApplicableBags="2ndChecked" ApproximateBasePrice="USD31.89" ApproximateTotalPrice="USD31.89" BasePrice="AUD40.00" TotalPrice="AUD40.00">
+                            <air:BaggageRestriction>
+                                <air:TextInfo>
+                                    <air:Text>UPTO50LB/23KG AND UPTO55LI/140LCM</air:Text>
+                                </air:TextInfo>
+                            </air:BaggageRestriction>
+                        </air:BagDetails>
+                    </air:BaggageAllowanceInfo>
+                    <air:CarryOnAllowanceInfo Carrier="QF" Destination="MEL" Origin="SYD">
+                        <air:TextInfo>
+                            <air:Text>BAGGAGE ALLOWANCE DATA NOT AVAILABLE</air:Text>
+                        </air:TextInfo>
+                    </air:CarryOnAllowanceInfo>
+                    <air:EmbargoInfo Carrier="QF" Destination="MEL" Origin="SYD">
+                        <air:URLInfo>
+                            <air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSQF.BAGG</air:URL>
+                        </air:URLInfo>
+                    </air:EmbargoInfo>
+                </air:BaggageAllowances>
+            </air:ETR>
+        </air:AirTicketingRsp>
+    </SOAP:Body>
+</SOAP:Envelope>

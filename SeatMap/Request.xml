@@ -1,0 +1,12 @@
+<SeatMapReq xmlns="http://www.travelport.com/schema/air_v33_0" TraceId="15d35d59-6d6a-4335-929a-9ff04744071b" AuthorizedBy="Travelport" TargetBranch="P105219" ReturnSeatPricing="true">
+    <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v33_0" OriginApplication="uAPI" />
+    <AirSegment Key="PDSoPy6/TIKVV2SFlrsCTw==" Status="HK" Group="0" Carrier="AF" FlightNumber="275" Origin="NRT" Destination="CDG" DepartureTime="2015-12-17T12:10:00.000+09:00" ArrivalTime="2015-12-17T16:55:00.000+01:00" TravelTime="765" Distance="6194" ProviderCode="1G" ClassOfService="S" />
+    <AirSegment Key="RCTldAeNSVmT3HQ7sTAblA==" Status="HK" Group="0" Carrier="AF" FlightNumber="1390" Origin="CDG" Destination="IST" DepartureTime="2015-12-17T19:00:00.000+01:00" ArrivalTime="2015-12-17T23:30:00.000+02:00" TravelTime="210" Distance="1397" ProviderCode="1G" ClassOfService="W" />
+    <SearchTraveler Code="ADT" Age="40" Key="bTFGUmdKVzBOSjlVNlV6NQ==">
+        <Name xmlns="http://www.travelport.com/schema/common_v33_0" Prefix="Mr" First="John" Last="Smith" />
+    </SearchTraveler>
+    <SearchTraveler Code="ADT" Age="40" Key="WENSekhYWGE1cXFnVGtGcA==">
+        <Name xmlns="http://www.travelport.com/schema/common_v33_0" Prefix="Mr" First="Michael" Last="Scott" />
+    </SearchTraveler>
+    <HostReservation Carrier="AF" CarrierLocatorCode="M9L407" ProviderCode="1G" ProviderLocatorCode="7JTHNU" UniversalLocatorCode="KB50J7" />
+</SeatMapReq>

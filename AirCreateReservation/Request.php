@@ -2,205 +2,60 @@
 
 $config = require(__DIR__.'/../config.php');
 
-header('Content-Type:text/xml;charset=utf-8');
+header('Content-Type: text/xml; charset=utf-8');
 
-$client = new SoapClient(__DIR__.'/../travelport/air_v34_0/Air.wsdl', [
-    'login' => $config['username'], 'password' => $config['password'], 'trace' => true
-]);
+$client = new SoapClient(__DIR__.'/../travelport/air_v34_0/Air.wsdl', ([
+    'login' => $config['username'], 'password' => $config['password']
+]));
 
-$start = "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"></soapenv:Envelope>";
+$request = $client->__doRequest("
+<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">
+    <soapenv:Header/>
+    <soapenv:Body>
+      <AirCreateReservationReq xmlns=\"http://www.travelport.com/schema/universal_v33_0\" TraceId=\"60ae1bcf-7c85-40a2-b804-98ea15d876bd\" AuthorizedBy=\"Travelport\" TargetBranch=\"P105219\" ProviderCode=\"1G\" RetainReservation=\"Both\">
+      <BillingPointOfSaleInfo xmlns=\"http://www.travelport.com/schema/common_v33_0\" OriginApplication=\"UAPI\" />
+      <BookingTraveler xmlns=\"http://www.travelport.com/schema/common_v33_0\" Key=\"TkZKR0MxV01Hc3NUT1BFdQ==\" TravelerType=\"ADT\" Age=\"40\" DOB=\"1975-12-15\" Gender=\"M\" Nationality=\"US\">
+        <BookingTravelerName Prefix=\"Mr\" First=\"John\" Last=\"Smith\" />
+        <DeliveryInfo>
+          <ShippingAddress Key=\"TkZKR0MxV01Hc3NUT1BFdQ==\">
+            <Street>Via Augusta 59 5</Street>
+            <City>Madrid</City>
+            <State>IA</State>
+            <PostalCode>50156</PostalCode>
+            <Country>US</Country>
+          </ShippingAddress>
+        </DeliveryInfo>
+        <PhoneNumber Location=\"DEN\" CountryCode=\"1\" AreaCode=\"303\" Number=\"123456789\" />
+        <Email EmailID=\"johnsmith@travelportuniversalapidemo.com\" />
+        <Address>
+          <AddressName>DemoSiteAddress</AddressName>
+          <Street>Via Augusta 59 5</Street>
+          <City>Madrid</City>
+          <State>IA</State>
+          <PostalCode>50156</PostalCode>
+          <Country>US</Country>
+        </Address>
+      </BookingTraveler>
+      <FormOfPayment xmlns=\"http://www.travelport.com/schema/common_v33_0\" IsAgentType=\"true\" Type=\"Cash\"></FormOfPayment>
+      <AirPricingSolution xmlns=\"http://www.travelport.com/schema/air_v33_0\" Key=\"sXIxoxuFQcWOcFiKzw91Rw==\" TotalPrice=\"GBP214.60\" BasePrice=\"JPY30400\" ApproximateTotalPrice=\"GBP214.60\" ApproximateBasePrice=\"GBP163.00\" EquivalentBasePrice=\"GBP163.00\" Taxes=\"GBP51.60\">
+        <AirSegment Key=\"N5kG5xhmSoSB4BVRCVB9IA==\" OptionalServicesIndicator=\"false\" AvailabilityDisplayType=\"Fare Specific Fare Quote Unbooked\" Group=\"0\" Carrier=\"SU\" FlightNumber=\"261\" Origin=\"NRT\" Destination=\"SVO\" DepartureTime=\"2015-12-16T13:10:00.000+09:00\" ArrivalTime=\"2015-12-16T17:35:00.000+03:00\" FlightTime=\"625\" TravelTime=\"625\" Distance=\"4664\" ProviderCode=\"1G\" ClassOfService=\"T\" />
+        <AirSegment Key=\"Wejc2CxISvWriiYx/dERgg==\" OptionalServicesIndicator=\"false\" AvailabilityDisplayType=\"Fare Specific Fare Quote Unbooked\" Group=\"0\" Carrier=\"SU\" FlightNumber=\"2134\" Origin=\"SVO\" Destination=\"IST\" DepartureTime=\"2015-12-16T21:45:00.000+03:00\" ArrivalTime=\"2015-12-17T00:30:00.000+02:00\" FlightTime=\"225\" TravelTime=\"225\" Distance=\"1089\" ProviderCode=\"1G\" ClassOfService=\"T\" />
+        <AirPricingInfo PricingMethod=\"Auto\" Taxes=\"GBP51.60\" Key=\"ccr+Gop4QsCRZMeKXALfDg==\" TotalPrice=\"GBP214.60\" BasePrice=\"JPY30400\" ApproximateTotalPrice=\"GBP214.60\" ApproximateBasePrice=\"GBP163.00\" ProviderCode=\"1G\">
+          <FareInfo PromotionalFare=\"false\" FareFamily=\"\" Amount=\"GBP163.00\" DepartureDate=\"2015-12-16\" EffectiveDate=\"2015-12-15T07:38:00.000+00:00\" Destination=\"IST\" Origin=\"NRT\" PassengerTypeCode=\"ADT\" FareBasis=\"TPXOW\" Key=\"e2QiHR9QRmCzyTWXpfgOXw==\">
+            <FareRuleKey FareInfoRef=\"e2QiHR9QRmCzyTWXpfgOXw==\" ProviderCode=\"1G\">6UUVoSldxwjlyt4REEYEFMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovAz+h4HL8/lD9M3ExqSoG051ZYJWJHEWKGJLYkVtcVqgTQu0ZscBMSQ4zlTqIWoxcTtdpt3EZnTu6NZVgvZw4iOeF/oTXxxF6MeJYtF79PC3YfoLT9JoAKrO7eP3a4bhHZNndpxuHcfNSCkJQE184nnbg2BMJ0qOmdTyy/Q52QOiIeGkxAlW4WMTWqy44qLn8S/wBShF29N4Sv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx8Qxibp/OJehpo2LrM59tO1jp8ZENljzx735+mk06MHbNbph6R864Mapb/JUnrGwUseyuta94zhnYIbenQB1hM0</FareRuleKey>
+          </FareInfo>
+          <BookingInfo BookingCode=\"T\" CabinClass=\"Economy\" FareInfoRef=\"e2QiHR9QRmCzyTWXpfgOXw==\" SegmentRef=\"N5kG5xhmSoSB4BVRCVB9IA==\" />
+          <BookingInfo BookingCode=\"T\" CabinClass=\"Economy\" FareInfoRef=\"e2QiHR9QRmCzyTWXpfgOXw==\" SegmentRef=\"Wejc2CxISvWriiYx/dERgg==\" />
+          <TaxInfo Key=\"4TPYWdKtTtOYOEa76yTZnw==\" Category=\"OI\" Amount=\"GBP2.80\" />
+          <TaxInfo Key=\"YwNv2MqbRSeu9q0QOj7hlg==\" Category=\"SW\" Amount=\"GBP11.20\" />
+          <TaxInfo Key=\"ZuipTMG1SCexfJGwr2biEA==\" Category=\"YQ\" Amount=\"GBP37.60\" />
+          <PassengerType Code=\"ADT\" Age=\"40\" BookingTravelerRef=\"TkZKR0MxV01Hc3NUT1BFdQ==\" />
+        </AirPricingInfo>
+      </AirPricingSolution>
+      <ActionStatus xmlns=\"http://www.travelport.com/schema/common_v33_0\" Type=\"ACTIVE\" TicketDate=\"T*\" ProviderCode=\"1G\" />
+    </AirCreateReservationReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+", $config['endpoint'], false, false);
 
-$xml = new SimpleXMLElement($start, 0, false, "http://schemas.xmlsoap.org/soap/envelope/", false);
-
-$header = $xml->addChild('Header');
-$body = $xml->addChild('Body');
-
-$airCreateReservationReq = $body->addChild('AirCreateReservationReq', '', 'http://www.travelport.com/schema/universal_v33_0');
-$airCreateReservationReq->addAttribute('TargetBranch', $config['branch']);
-$airCreateReservationReq->addAttribute('ProvierCode', '1G');
-$airCreateReservationReq->addAttribute('RetainReservation', 'Both');
-
-$billingPointOfSaleInfo = $airCreateReservationReq->addChild('BillingPointOfSaleInfo', '', 'http://www.travelport.com/schema/common_v33_0');
-$billingPointOfSaleInfo->addAttribute('OriginApplication', 'UAPI');
-
-$bookingTraveler = $airCreateReservationReq->addChild('BookingTraveler', '', 'http://www.travelport.com/schema/common_v33_0');
-$bookingTraveler->addAttribute('Key', 'TlMxSEFjNGJFQWZDUGNobA==');
-$bookingTraveler->addAttribute('TravelerType', 'ADT');
-$bookingTraveler->addAttribute('Age', '40');
-$bookingTraveler->addAttribute('DOB', '1975-12-14');
-$bookingTraveler->addAttribute('Gender', 'M');
-
-
-// === First People
-$bookingTravelerName = $bookingTraveler->addChild('BookingTravelerName', '', 'http://www.travelport.com/schema/common_v33_0');
-$bookingTravelerName->addAttribute('Prefix', 'Mr');
-$bookingTravelerName->addAttribute('First', 'John');
-$bookingTravelerName->addAttribute('Last', 'Doe');
-
-$deliveryInfo = $bookingTraveler->addChild('DeliveryInfo');
-
-$shippingAddress = $deliveryInfo->addChild('ShippingAddress');
-$shippingAddress->addAttribute('Key', 'TlMxSEFjNGJFQWZDUGNobA==');
-$shippingAddress->addChild('Street', 'Via Augusta 59 5');
-$shippingAddress->addChild('City', 'Madrid');
-$shippingAddress->addChild('State', 'IA');
-$shippingAddress->addChild('PostalCode', '50156');
-$shippingAddress->addChild('Country', 'US');
-
-$phoneNumber = $bookingTraveler->addChild('PhoneNumber');
-$phoneNumber->addAttribute('Location', 'DEN');
-$phoneNumber->addAttribute('CountryCode', '1');
-$phoneNumber->addAttribute('AreaCode', '303');
-$phoneNumber->addAttribute('Number', '123456789');
-
-$email = $bookingTraveler->addChild('Email');
-$email->addAttribute('EmailId', 'hello@example.com');
-
-$address = $bookingTraveler->addChild('Address');
-$address->addChild('AddressName', 'Foo');
-$address->addChild('Street', 'Via Augusta 59 5');
-$address->addChild('City', 'Madrid');
-$address->addChild('State', 'IA');
-$address->addChild('PostalCode', '50156');
-$address->addChild('Country', 'US');
-
-// ... Other peoples
-
-// === First People end
-
-//=== Form of Payment
-
-$formOfPayment = $airCreateReservationReq->addChild('FormOfPayment', '', 'http://www.travelport.com/schema/common_v33_0');
-$formOfPayment->addAttribute('Type', 'Credit');
-$formOfPayment->addAttribute('Key', '1');
-
-$creditCard = $formOfPayment->addChild('CreditCard');
-$creditCard->addAttribute('Type', 'VI'); // The 2 letter credit/ debit card type.
-$creditCard->addAttribute('Number', '4444333322221111');
-$creditCard->addAttribute('ExpDate', '2015-12');
-$creditCard->addAttribute('Name', 'John Smith');
-$creditCard->addAttribute('CVV', '123');
-$creditCard->addAttribute('Key', '1');
-
-$billingAddress = $creditCard->addChild('BillingAddress');
-$billingAddress->addAttribute('Key', '...');
-
-$billingAddress->addChild('AddressName', 'Hello');
-$billingAddress->addChild('Street', 'Hello');
-$billingAddress->addChild('City', 'Hello');
-$billingAddress->addChild('State', 'Hello');
-$billingAddress->addChild('PostalCode', '50156');
-$billingAddress->addChild('Country', 'US');
-
-//=== Form of Payment
-
-//=== AirPricingSolution
-
-$airPricingSolution = $airCreateReservationReq->addChild('AirPricingSolution', '', 'http://www.travelport.com/schema/air_v33_0');
-$airPricingSolution->addAttribute('Key', 'NU3Gb39dRmWIDDcb6EVcdQ==');
-$airPricingSolution->addAttribute('TotalPrice', 'GBP598.20');
-$airPricingSolution->addAttribute('BasePrice', 'JPY83600');
-$airPricingSolution->addAttribute('ApproximateTotalPrice', 'GBP598.20');
-$airPricingSolution->addAttribute('ApproximateBasePrice', 'GBP449.00');
-$airPricingSolution->addAttribute('EquivalentBasePrice', 'GBP449.00');
-$airPricingSolution->addAttribute('Taxes', 'GBP149.20');
-
-$airSegment = $airPricingSolution->addChild('AirSegment');
-$airSegment->addAttribute('Key', '9HeaLdIbSaSknrWBbeuVmw==');
-$airSegment->addAttribute('OptionalServicesIndicator', 'false');
-$airSegment->addAttribute('AvailabilityDisplayType', 'Fare Specific Fare Quote Unbooked');
-$airSegment->addAttribute('Group', 0);
-$airSegment->addAttribute('Carrier', 'SU');
-$airSegment->addAttribute('FlightNumber', '261');
-$airSegment->addAttribute('Origin', 'NRT');
-$airSegment->addAttribute('Destination', 'SVO');
-$airSegment->addAttribute('DepartureTime', '2015-12-15T13:10:00.000+09:00');
-$airSegment->addAttribute('ArrivalTime', '2015-12-15T17:35:00.000+03:00');
-$airSegment->addAttribute('FlightTime', '625');
-$airSegment->addAttribute('Distance', '4664');
-$airSegment->addAttribute('ProviderCode', '1G');
-$airSegment->addAttribute('ClassOfService', 'T');
-
-$airPricingInfo = $airPricingSolution->addChild('AirPricingInfo');
-$airPricingInfo->addAttribute('PricingMethod', 'Auto');
-$airPricingInfo->addAttribute('Taxes', 'GBP51.60');
-$airPricingInfo->addAttribute('Key', '8n7Du2wCR7CB6hENs+wEag==');
-$airPricingInfo->addAttribute('TotalPrice', 'GBP214.60');
-$airPricingInfo->addAttribute('BasePrice', 'JPY30400');
-$airPricingInfo->addAttribute('ApproximateTotalPrice', 'GBP214.60');
-$airPricingInfo->addAttribute('ApproximateBasePrice', 'GBP163.00');
-$airPricingInfo->addAttribute('ProviderCode', '1G');
-
-$fareInfo = $airPricingInfo->addChild('FareInfo');
-$fareInfo->addAttribute('PromotionalFare', 'false');
-$fareInfo->addAttribute('FareFamily', '');
-$fareInfo->addAttribute('Amount', '');
-$fareInfo->addAttribute('DepartureDate', 'DepartureDate');
-$fareInfo->addAttribute('EffectiveDate', '2015-12-14T07:30:00.000+00:00');
-$fareInfo->addAttribute('Destination', 'IST');
-$fareInfo->addAttribute('Origin', 'NRT');
-$fareInfo->addAttribute('PassengerTypeCode', 'ADT');
-$fareInfo->addAttribute('FareBasis', 'TPXOW');
-$fareInfo->addAttribute('Key', 'RCcEvv6lSZ6xNTiV/EUb8w==');
-
-$fareRuleKey = $fareInfo->addChild('FareRuleKey', '6UUVoSldxwhIjdMOso0Z2sbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovAz+h4HL8/lD9M3ExqSoG051ZYJWJHEWKGJLYkVtcVqgTQu0ZscBMSQ4zlTqIWoxcTtdpt3EZnTu6cc5hHtDx8xuF/oTXxxF6MeJYtF79PC3YfoLT9JoAKrO7eP3a4bhHZNndpxuHcfNSCkJQE184nnbg2BMJ0qOmdTyy/Q52QOiIeGkxAlW4WMTWqy44qLn8S/wBShF29N4Sv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx8Qxibp/OJehpo2LrM59tO1jp8ZENljzx735+mk06MHbNbph6R864Mapb/JUnrGwUseyuta94zhnYIbenQB1hM0');
-$fareRuleKey->addAttribute('FareInfoRef', 'RCcEvv6lSZ6xNTiV/EUb8w==');
-$fareRuleKey->addAttribute('ProviderCode', '1G');
-
-$brand = $fareInfo->addChild('Brand');
-$brand->addAttribute('Key', '');
-$brand->addAttribute('BrandId', '8318');
-$brand->addAttribute('Name', '');
-
-//=== AirPricingSolution
-
-//=== BookingInfo
-$bookingInfo = $airPricingInfo->addChild('BookingInfo');
-$bookingInfo->addAttribute('BookingCode', 'T');
-$bookingInfo->addAttribute('CabinClass', 'Economy');
-$bookingInfo->addAttribute('FareInfoRef', 'RCcEvv6lSZ6xNTiV/EUb8w==');
-$bookingInfo->addAttribute('SegmentRef', '9HeaLdIbSaSknrWBbeuVmw==');
-
-$bookingInfo = $airPricingInfo->addChild('BookingInfo');
-$bookingInfo->addAttribute('BookingCode', 'T');
-$bookingInfo->addAttribute('CabinClass', 'Economy');
-$bookingInfo->addAttribute('FareInfoRef', 'RCcEvv6lSZ6xNTiV/EUb8w==');
-$bookingInfo->addAttribute('SegmentRef', 'SRCSZgd3RZyhpuYG9k+VUA==');
-
-$taxInfo = $airPricingInfo->addChild('TaxInfo');
-$taxInfo->addAttribute('Key', 'dqPGA/jbScyhb0YA3Jc83Q==');
-$taxInfo->addAttribute('Category', 'OI');
-$taxInfo->addAttribute('Amount', 'GBP2.80');
-
-$taxInfo = $airPricingInfo->addChild('TaxInfo');
-$taxInfo->addAttribute('Key', 'vmX+9CudSbSgW6Bi/ZUrYg==');
-$taxInfo->addAttribute('Category', 'SW');
-$taxInfo->addAttribute('Amount', 'GBP11.20');
-
-$taxInfo = $airPricingInfo->addChild('TaxInfo');
-$taxInfo->addAttribute('Key', '1NVi6qaiSPSdYtlpUUowAw==');
-$taxInfo->addAttribute('Category', 'YQ');
-$taxInfo->addAttribute('Amount', 'GBP37.60');
-
-$passengerType = $airPricingInfo->addChild('passengerType');
-$passengerType->addAttribute('Code', 'ADT');
-$passengerType->addAttribute('Age', '40');
-$passengerType->addAttribute('BookingTravelerRef', 'dlRFSVREWWNRYklnd1dFaw==');
-
-$passengerType = $airPricingInfo->addChild('passengerType');
-$passengerType->addAttribute('Code', 'ADT');
-$passengerType->addAttribute('Age', '40');
-$passengerType->addAttribute('BookingTravelerRef', 'a1h3SDJuVW9NcTZVZm95SQ==');
-
-$accountStatus = $airCreateReservationReq->addChild('AccountStatus', '', 'http://www.travelport.com/schema/common_v33_0');
-$accountStatus->addAttribute('Type', 'ACTIVE');
-$accountStatus->addAttribute('TicketDate', 'T*');
-$accountStatus->addAttribute('ProviderCode', '1G');
-
-$airService = "https://emea.universal-api.pp.travelport.com/B2BGateway/connect/uAPI/AirService";
-
-echo $xml->asXML();
-
-//$request = $client->__doRequest($xml->asXML(), $airService, null, null);
-
-//echo $request;
+echo $request;

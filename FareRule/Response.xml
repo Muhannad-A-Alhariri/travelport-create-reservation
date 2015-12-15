@@ -1,0 +1,80 @@
+<air:AirFareRulesRsp xmlns:air="http://www.travelport.com/schema/air_v33_0" TraceId="14e5a7f3-af21-41cb-8b08-f3c7103e7db5" TransactionId="A4B7C3360A07643BD914C58A3021803D" ResponseTime="2521">
+    <air:FareRule FareInfoRef="Ri2QckPgTciKqHZ5gjMCUw==" RuleNumber="2200" Source="ATPCO" TariffNumber="004" ProviderCode="1G">
+        <air:FareRuleLong Category="0" Type="RULE">APPLICATION AND OTHER CONDITIONS
+            RULE - 304/2200
+            UNLESS OTHERWISE SPECIFIED
+            TK DOMESTIC FARES
+            APPLICATION
+            AREA
+            THESE FARES APPLY
+            WITHIN TURKEY.
+            CLASS OF SERVICE
+            THESE FARES APPLY FOR ECONOMY CLASS SERVICE.
+            TYPES OF TRANSPORTATION
+            FARES GOVERNED BY THIS RULE CAN BE USED TO CREATE
+            ONE-WAY/ROUND-TRIP/OPEN-JAW JOURNEYS.</air:FareRuleLong>
+        <air:FareRuleLong Category="4" Type="RULE">FLIGHT APPLICATION
+            UNLESS OTHERWISE SPECIFIED
+            THE FARE COMPONENT MUST BE ON
+            ONE OR MORE OF THE FOLLOWING
+            ANY TK FLIGHT.</air:FareRuleLong>
+        <air:FareRuleLong Category="8" Type="RULE">STOPOVERS
+            NONE UNLESS OTHERWISE SPECIFIED</air:FareRuleLong>
+        <air:FareRuleLong Category="9" Type="RULE">TRANSFERS
+            UNLESS OTHERWISE SPECIFIED
+            NO TRANSFERS PERMITTED
+            FARE BREAK AND EMBEDDED SURFACE SECTORS PERMITTED ON THE
+            FARE COMPONENT.
+            NOTE -
+            SURFACE SECTORS WITHIN A FARE COMPONENT ARE NOT
+            PERMITTED.</air:FareRuleLong>
+        <air:FareRuleLong Category="10" Type="RULE">PERMITTED COMBINATIONS
+            UNLESS OTHERWISE SPECIFIED
+            ADD-ONS NOT PERMITTED.
+            FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS WITH ANY
+            FARE FOR ANY CARRIER IN ANY RULE AND TARIFF TO FORM
+            SINGLE/DOUBLE OPEN JAWS/ROUND TRIPS/CIRCLE TRIPS.
+            END-ON-END
+            END-ON-END COMBINATIONS PERMITTED WITH DOMESTIC/
+            INTERNATIONAL FARES. VALIDATE ALL FARE COMPONENTS. FARES
+            MUST BE SHOWN SEPARATELY ON THE TICKET. TRAVEL MUST BE
+            VIA THE POINT OF COMBINATION.</air:FareRuleLong>
+        <air:FareRuleLong Category="15" Type="RULE">SALES RESTRICTIONS
+            UNLESS OTHERWISE SPECIFIED
+            TICKETS MAY BE ISSUED BY PTA.
+            TICKETS MAY NOT BE SOLD IN IRAN,ISLAMIC REPUBLIC OF.
+            NOTE -
+            UPGRADE TO ANY HGHER FARE IS PERMTTED</air:FareRuleLong>
+        <air:FareRuleLong Category="16" Type="RULE">PENALTIES
+            UNLESS OTHERWISE SPECIFIED
+            CHANGES
+            CHANGES PERMITTED FOR REISSUE/REVALIDATION.
+            CANCELLATIONS
+            BEFORE DEPARTURE
+            CANCELLATIONS PERMITTED.
+            NOTE -
+            AFTER DEPARTURE
+            REFUND THE FARE PAID LESS -OW FARE</air:FareRuleLong>
+        <air:FareRuleLong Category="17" Type="RULE">HIP/MILEAGE EXCEPTIONS
+            UNLESS OTHERWISE SPECIFIED
+            NOTE -
+            IGNORE ANY HIGHER INTERMEDIATE FARE.</air:FareRuleLong>
+        <air:FareRuleLong Category="18" Type="RULE">TICKET ENDORSEMENT
+            UNLESS OTHERWISE SPECIFIED
+            THE ORIGINAL AND THE REISSUED TICKET MUST BE ANNOTATED -
+            NONEND/TK ONLY - IN THE ENDORSEMENT BOX.</air:FareRuleLong>
+        <air:FareRuleLong Category="19" Type="RULE">CHILDREN DISCOUNTS
+            UNLESS OTHERWISE SPECIFIED
+            ACCOMPANIED CHILD 2-11 - CHARGE 75 PERCENT OF THE FARE.
+            TICKETING CODE - BASE FARE CODE PLUS CH
+            OR - 1ST INFANT UNDER 2 WITHOUT A SEAT - CHARGE 10 PERCENT
+            OF THE FARE.</air:FareRuleLong>
+        <air:FareRuleLong Category="20" Type="RULE">TOUR CONDUCTOR DISCOUNTS
+            NONE UNLESS OTHERWISE SPECIFIED</air:FareRuleLong>
+        <air:FareRuleLong Category="21" Type="RULE">AGENT DISCOUNTS
+            NONE UNLESS OTHERWISE SPECIFIED</air:FareRuleLong>
+        <air:FareRuleLong Category="31" Type="RULE">VOLUNTARY CHANGES
+            DO A CATEGORY 31 SPECIFIC TEXT ENTRY TO VIEW CONTENTS
+            ALSO REFERENCE 16 PENALTIES - FOR ADDITIONAL CHANGE INFORMATION</air:FareRuleLong>
+    </air:FareRule>
+</air:AirFareRulesRsp>

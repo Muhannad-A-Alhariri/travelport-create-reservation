@@ -1,0 +1,4 @@
+<AirFareRulesReq xmlns="http://www.travelport.com/schema/air_v33_0" TraceId="14e5a7f3-af21-41cb-8b08-f3c7103e7db5" TargetBranch="P105219">
+    <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v33_0" OriginApplication="uAPI" />
+    <FareRuleKey FareInfoRef="Ri2QckPgTciKqHZ5gjMCUw==" ProviderCode="1G">6UUVoSldxwjlyt4REEYEFMbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA/CcdOxwoeJfO422wYI1U7dZYJWJHEWKGCz2Mt7Ho06eQu0ZscBMSQ4paOmZrFY0HRVKd1MlWdzL6vpRR+sM6Ak70CJW3hmugIX+hNfHEXoxevlka/LamDz7rYnjL806QjNlZ5zMWmpkVvL0gTWvGVJsAtNlFMzLJwhMO1GxAJsiLPYy3sejTp6LhbABMTKFZb+F729rtUMfv4Xvb2u1Qx+/he9va7VDH7+F729rtUMfv4Xvb2u1Qx88sWrgLPr3gRN9PARV7He0DzanJpkuq+wdljeBI2GpKpa9dEiH744xArVY2L/dQTSeXa9K5yalaORsBfJKkIog</FareRuleKey>
+</AirFareRulesReq>

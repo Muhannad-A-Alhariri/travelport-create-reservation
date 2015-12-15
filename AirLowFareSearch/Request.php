@@ -1,75 +1,116 @@
 <?php
 
+header('Content-Type: text/xml; charset=utf-8');
+
 $config = require(__DIR__.'/../config.php');
 
-header('Content-Type:text/xml;charset=utf-8');
-
+// Soap Client
+// Authentication with Basic authentication
 $client = new SoapClient(__DIR__.'/../travelport/air_v34_0/Air.wsdl', [
-    'login' => $config['username'], 'password' => $config['password'], 'trace' => true
+    'login' => $config['username'], 'password' => $config['password']
 ]);
 
-$start = "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"></soapenv:Envelope>";
-
-$xml = new SimpleXMLElement($start, 0, false, "http://schemas.xmlsoap.org/soap/envelope/", false);
+$xml = new SimpleXMLElement("<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/'></soapenv:Envelope>");
 
 $header = $xml->addChild('Header');
+
 $body = $xml->addChild('Body');
 
-$lowFareSearchReq = $body->addChild('LowFareSearchReq', null, 'http://www.travelport.com/schema/air_v33_0');
-
-// Used for Emulation - If authorised will execute the request as if the
-// agent's parent branch is the TargetBranch specified.
+$lowFareSearchReq = $body->addChild('LowFareSearchReq', '', $config['namespace']['air']);
+$lowFareSearchReq->addAttribute('TraceId', 'trace');
+$lowFareSearchReq->addAttribute('SolutionResult', 'true');
 $lowFareSearchReq->addAttribute('TargetBranch', $config['branch']);
 
-// When set to “true”, Upsell information will be returned in the shop response.
-// Provider supported : 1G, 1V, 1P, 1J
-$lowFareSearchReq->addAttribute('ReturnUpsellFare', 'false');
+$billingPointOfSaleInfo = $lowFareSearchReq->addChild('BillingPointOfSaleInfo', '', 'http://www.travelport.com/schema/common_v33_0');
+$billingPointOfSaleInfo->addAttribute('OriginApplication', 'UAPI');
 
-// Provider: 1G,1V,1P,1J,ACH-Indicates whether the response will contain
-// Solution result (AirPricingSolution) or Non Solution Result (AirPricingPoints).
-// The default value is false. This attribute cannot be combined with
-// EnablePointToPointSearch, EnablePointToPointAlternates and MaxNumberOfExpertSolutions.
-$lowFareSearchReq->addAttribute('SolutionResult', 'true');
-
-$billingPointOfSaleInfo = $lowFareSearchReq->addChild('BillingPointOfSaleInfo', null, $config['namespace']);
-$billingPointOfSaleInfo->addAttribute('OriginApplication', 'uAPI');
-
+// === SearchAirLeg
 $searchAirLeg = $lowFareSearchReq->addChild('SearchAirLeg');
 
 $searchOrigin = $searchAirLeg->addChild('SearchOrigin');
-$cityOrAirport = $searchOrigin->addChild('CityOrAirport', null, $config['namespace']);
+
+$cityOrAirport = $searchOrigin->addChild('CityOrAirport', '', $config['namespace']['com']);
 $cityOrAirport->addAttribute('Code', 'TYO');
 $cityOrAirport->addAttribute('PreferCity', 'true');
 
 $searchDestination = $searchAirLeg->addChild('SearchDestination');
-$cityOrAirport = $searchDestination->addChild('CityOrAirport', null, $config['namespace']);
+
+$cityOrAirport = $searchDestination->addChild('CityOrAirport', '', $config['namespace']['com']);
 $cityOrAirport->addAttribute('Code', 'IST');
 $cityOrAirport->addAttribute('PreferCity', 'true');
 
 $searchDepTime = $searchAirLeg->addChild('SearchDepTime');
-$searchDepTime->addAttribute('PreferredTime', '2015-12-18');
+$searchDepTime->addAttribute('PreferredTime', '2015-12-23');
 
+$airLegModifiers = $searchAirLeg->addChild('AirLegModifiers');
+
+$preferredCabins = $airLegModifiers->addChild('PreferredCabins');
+
+$cabinClass = $preferredCabins->addChild('CabinClass', '', $config['namespace']['com']);
+$cabinClass->addAttribute('Type', 'Economy');
+// SearchAirLeg ====
+
+// === SearchAirLeg
+$searchAirLeg = $lowFareSearchReq->addChild('SearchAirLeg');
+
+$searchOrigin = $searchAirLeg->addChild('SearchOrigin');
+
+$cityOrAirport = $searchOrigin->addChild('CityOrAirport', '', $config['namespace']['com']);
+$cityOrAirport->addAttribute('Code', 'IST');
+$cityOrAirport->addAttribute('PreferCity', 'true');
+
+$searchDestination = $searchAirLeg->addChild('SearchDestination');
+
+$cityOrAirport = $searchDestination->addChild('CityOrAirport', '', $config['namespace']['com']);
+$cityOrAirport->addAttribute('Code', 'TYO');
+$cityOrAirport->addAttribute('PreferCity', 'true');
+
+$searchDepTime = $searchAirLeg->addChild('SearchDepTime');
+$searchDepTime->addAttribute('PreferredTime', '2015-12-26');
+
+$airLegModifiers = $searchAirLeg->addChild('AirLegModifiers');
+
+$preferredCabins = $airLegModifiers->addChild('PreferredCabins');
+
+$cabinClass = $preferredCabins->addChild('CabinClass', '', $config['namespace']['com']);
+$cabinClass->addAttribute('Type', 'Economy');
+// SearchAirLeg ====
+
+// AirSearchModifiers ===
 $airSearchModifiers = $lowFareSearchReq->addChild('AirSearchModifiers');
+$airSearchModifiers->addAttribute('MaxJourneyTime', 13);
+
 $preferredProviders = $airSearchModifiers->addChild('PreferredProviders');
-$provider = $preferredProviders->addChild('Provider', null, $config['namespace']);
+
+$provider = $preferredProviders->addChild('Provider', '', $config['namespace']['com']);
 $provider->addAttribute('Code', '1G');
 
-$searchPassenger = $lowFareSearchReq->addChild('SearchPassenger', null, $config['namespace']);
+$flightType = $airSearchModifiers->addChild('FlightType');
+$flightType->addAttribute('NonStopDirects', 'true');
+// === AirSearchModifiers
+
+// Search Passengers ===
+$searchPassenger = $lowFareSearchReq->addChild('SearchPassenger', '', $config['namespace']['com']);
 $searchPassenger->addAttribute('Code', 'ADT');
-$searchPassenger->addAttribute('Age', 40);
-$searchPassenger->addAttribute('DOB', '1975-12-11');
+$searchPassenger->addAttribute('Age', '40');
+$searchPassenger->addAttribute('DOB', '1975-12-14');
 
-$airPricingModifiers = $lowFareSearchReq->addChild('AirPricingModifiers');
-// Set Currency
-$airPricingModifiers->addAttribute('CurrencyType', 'TRY');
-// Request a search based on whether only E-ticketable fares are required.
-$airPricingModifiers->addAttribute('ETicketability', 'Yes'); // Yes , No , Required , Ticketless
-//$airPricingModifiers->addAttribute('OneWayShop', 'true'); // User Required
+$searchPassenger = $lowFareSearchReq->addChild('SearchPassenger', '', $config['namespace']['com']);
+$searchPassenger->addAttribute('Code', 'ADT');
+$searchPassenger->addAttribute('Age', '40');
+$searchPassenger->addAttribute('DOB', '1975-12-14');
 
-$airService = "https://emea.universal-api.pp.travelport.com/B2BGateway/connect/uAPI/AirService";
+// === Search Passengers
 
-//echo $xml->asXML();
+// AirPricingModifiers ====
+$airPriceModifiers = $lowFareSearchReq->addChild('AirPricingModifiers');
+$airPriceModifiers->addAttribute('CurrencyType', 'TRY');
+$airPriceModifiers->addAttribute('ETicketability', 'Yes');
 
-$request = $client->__doRequest($xml->asXML(), $airService, null, null);
+// === AirPricingModifiers
+
+//echo $xml->asXml();
+
+$request = $client->__doRequest($xml->asXML(), $config['endpoint'], null, null);
 
 echo $request;

@@ -1,0 +1,14 @@
+<SOAP:Fault xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+    <faultcode>Server.Data</faultcode>
+    <faultstring>Only one AirSegment is allowed.</faultstring>
+    <detail>
+        <common_v33_0:ErrorInfo xmlns:common_v33_0="http://www.travelport.com/schema/common_v33_0">
+            <common_v33_0:Code>4235</common_v33_0:Code>
+            <common_v33_0:Service>VEHSVC</common_v33_0:Service>
+            <common_v33_0:Type>Data</common_v33_0:Type>
+            <common_v33_0:Description>Only one AirSegment is allowed.</common_v33_0:Description>
+            <common_v33_0:TransactionId>A4A9CFDA0A076477679E971291BA8742</common_v33_0:TransactionId>
+            <common_v33_0:TraceId>15d35d59-6d6a-4335-929a-9ff04744071b</common_v33_0:TraceId>
+        </common_v33_0:ErrorInfo>
+    </detail>
+</SOAP:Fault>

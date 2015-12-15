@@ -1,0 +1,169 @@
+<!--Version Dated as of 12/Jan/2015 19:38:19-->
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP:Body>
+        <air:AirRefundRsp xmlns:air="http://www.travelport.com/schema/air_v30_0"
+                          xmlns:common_v30_0="http://www.travelport.com/schema/common_v30_0"
+                          ResponseTime="12980" TraceId="trace"
+                          TransactionId="F03B581A0A07761FB2CC5D9DFC26F230">
+            <air:TCR BasePrice="CAD988.00"
+                     ConfirmedDate="2014-11-26T23:45:42.000-08:00"
+                     Exchangeable="false" Fees="CAD92.00" Modifiable="false"
+                     ModifiedDate="2014-11-26T23:51:13.000-08:00"
+                     ProviderCode="ACH" ProviderLocatorCode="PF3J5A"
+                     Refundable="false" Status="Refunded" TCRNumber="61692"
+                     Taxes="CAD183.40" Voidable="false">
+                <common_v30_0:FormOfPayment Key="jwt2mcK1Qp27I2xfpcCtAw=="
+                                            ProfileKey="9rGT36GJTpO7r3fYe9N4xQ=="
+                                            Reusable="true" Type="Credit">
+                    <common_v30_0:CreditCard ExpDate="2016-06"
+                                             Name="Susan Jones"
+                                             Number="4123456789001111"
+                                             Type="VI">
+                        <common_v30_0:BillingAddress
+                            Key="Sm8GQ7ajReypTWuhI96O1A==">
+                            <common_v30_0:AddressName>Home
+                            </common_v30_0:AddressName>
+                            <common_v30_0:Street>123 Dalton Drive
+                            </common_v30_0:Street>
+                            <common_v30_0:City>Calgary</common_v30_0:City>
+                            <common_v30_0:State>AB</common_v30_0:State>
+                            <common_v30_0:PostalCode>T2P1K6
+                            </common_v30_0:PostalCode>
+                            <common_v30_0:Country>CA</common_v30_0:Country>
+                        </common_v30_0:BillingAddress>
+                    </common_v30_0:CreditCard>
+                    <common_v30_0:ProviderReservationInfoRef
+                        Key="0Q6PCbOZS4Wr9vkGqYR1iQ=="/>
+                </common_v30_0:FormOfPayment>
+                <common_v30_0:Payment Amount="CAD1263.40"
+                                      FormOfPaymentRef="jwt2mcK1Qp27I2xfpcCtAw=="
+                                      Key="BuckZMNXRUSyZonPxqpGfw=="
+                                      Type="Itinerary"/>
+                <common_v30_0:BookingTraveler DOB="1983-09-04" Gender="F"
+                                              Key="gr8AVWGCR064r57Jt0+8bA=="
+                                              TravelerType="ADT">
+                    <common_v30_0:BookingTravelerName First="Susan" Last="Jones"
+                                                      Prefix="MRS"/>
+                    <common_v30_0:DeliveryInfo>
+                        <common_v30_0:ShippingAddress
+                            Key="FdPLBLHpTWOA67t9QdYxgQ==">
+                            <common_v30_0:AddressName>Home
+                            </common_v30_0:AddressName>
+                            <common_v30_0:Street>123 Dalton Drive
+                            </common_v30_0:Street>
+                            <common_v30_0:City>Calgary</common_v30_0:City>
+                            <common_v30_0:State>AB</common_v30_0:State>
+                            <common_v30_0:PostalCode>T2P1K6
+                            </common_v30_0:PostalCode>
+                            <common_v30_0:Country>CA</common_v30_0:Country>
+                            <common_v30_0:ProviderReservationInfoRef
+                                Key="0Q6PCbOZS4Wr9vkGqYR1iQ=="/>
+                        </common_v30_0:ShippingAddress>
+                        <common_v30_0:ProviderReservationInfoRef
+                            Key="0Q6PCbOZS4Wr9vkGqYR1iQ=="/>
+                    </common_v30_0:DeliveryInfo>
+                    <common_v30_0:PhoneNumber AreaCode="403" CountryCode="1"
+                                              Key="4Q73rIDwSaucsxakqomLIg=="
+                                              Location="YYC" Number="555-1212">
+                        <common_v30_0:ProviderReservationInfoRef
+                            Key="0Q6PCbOZS4Wr9vkGqYR1iQ=="/>
+                    </common_v30_0:PhoneNumber>
+                    <common_v30_0:PhoneNumber AreaCode="403" CountryCode="01"
+                                              Key="RsHO73NIS+W4IZuRep9QJw=="
+                                              Number="555-1212" Type="Other">
+                        <common_v30_0:ProviderReservationInfoRef
+                            Key="0Q6PCbOZS4Wr9vkGqYR1iQ=="/>
+                    </common_v30_0:PhoneNumber>
+                    <common_v30_0:Email EmailID="test@travelport.com"
+                                        Key="5wOidTypTN6JWp44tw02WA=="
+                                        Type="Home">
+                        <common_v30_0:ProviderReservationInfoRef
+                            Key="0Q6PCbOZS4Wr9vkGqYR1iQ=="/>
+                    </common_v30_0:Email>
+                    <common_v30_0:Address Key="Bg8EkHePRz+7DjLbX3BNmA==">
+                        <common_v30_0:AddressName>Home
+                        </common_v30_0:AddressName>
+                        <common_v30_0:Street>123 Dalton Drive
+                        </common_v30_0:Street>
+                        <common_v30_0:City>Calgary</common_v30_0:City>
+                        <common_v30_0:State>AB</common_v30_0:State>
+                        <common_v30_0:PostalCode>T2P1K6
+                        </common_v30_0:PostalCode>
+                        <common_v30_0:Country>CA</common_v30_0:Country>
+                        <common_v30_0:ProviderReservationInfoRef
+                            Key="0Q6PCbOZS4Wr9vkGqYR1iQ=="/>
+                    </common_v30_0:Address>
+                </common_v30_0:BookingTraveler>
+                <common_v30_0:BookingTraveler DOB="1987-07-07" Gender="M"
+                                              Key="LQ/blhXrSyydUeLLbiAK0Q=="
+                                              TravelerType="ADT">
+                    <common_v30_0:BookingTravelerName First="Stephen"
+                                                      Last="Jones" Prefix="MR"/>
+                    <common_v30_0:Address Key="mmVqXfylQdCwIDRsbtssFg==">
+                        <common_v30_0:AddressName>Home
+                        </common_v30_0:AddressName>
+                        <common_v30_0:Street>123 Dalton Drive
+                        </common_v30_0:Street>
+                        <common_v30_0:City>Calgary</common_v30_0:City>
+                        <common_v30_0:State>AB</common_v30_0:State>
+                        <common_v30_0:PostalCode>T2P1K6
+                        </common_v30_0:PostalCode>
+                        <common_v30_0:Country>CA</common_v30_0:Country>
+                        <common_v30_0:ProviderReservationInfoRef
+                            Key="0Q6PCbOZS4Wr9vkGqYR1iQ=="/>
+                    </common_v30_0:Address>
+                </common_v30_0:BookingTraveler>
+                <air:PassengerTicketNumber TicketNumber="PF3J5A"/>
+                <common_v30_0:AgencyInfo>
+                    <common_v30_0:AgentAction ActionType="Created"
+                                              AgencyCode="AGCY_CODE"
+                                              AgentCode="AGNT_CODE"
+                                              BranchCode="BRCH_CODE"
+                                              EventTime="2014-11-27T07:45:42.297+00:00"/>
+                </common_v30_0:AgencyInfo>
+                <air:AirReservationLocatorCode>DX8659
+                </air:AirReservationLocatorCode>
+                <common_v30_0:RefundRemark>
+                    <common_v30_0:RemarkData>Refunds are credited back to the
+                        original method of payment.
+                    </common_v30_0:RemarkData>
+                </common_v30_0:RefundRemark>
+                <common_v30_0:RefundRemark>
+                    <common_v30_0:RemarkData>5-10 business days are required to
+                        process a refund.
+                    </common_v30_0:RemarkData>
+                </common_v30_0:RefundRemark>
+                <common_v30_0:RefundRemark>
+                    <common_v30_0:RemarkData>Once your refund has been
+                        processed, an email confirmation is sent.
+                    </common_v30_0:RemarkData>
+                </common_v30_0:RefundRemark>
+                <common_v30_0:RefundRemark>
+                    <common_v30_0:RemarkData>Items from customized flights,
+                        including À La Carte travel extras are not refundable,
+                        such as Assigned Seat Selection, Maple Leaf Lounge
+                        Access, and In Flight Café snack or meal vouchers.
+                    </common_v30_0:RemarkData>
+                </common_v30_0:RefundRemark>
+                <common_v30_0:RefundRemark>
+                    <common_v30_0:RemarkData>When you cancel a ticket within 24
+                        hours of booking, your ticket is either refunded or the
+                        payment transaction is cancelled.
+                    </common_v30_0:RemarkData>
+                </common_v30_0:RefundRemark>
+                <common_v30_0:RefundRemark>
+                    <common_v30_0:RemarkData>If a ticket is refunded, you will
+                        be advised via email; if payment is cancelled, no email
+                        is sent.
+                    </common_v30_0:RemarkData>
+                </common_v30_0:RefundRemark>
+                <common_v30_0:RefundRemark>
+                    <common_v30_0:RemarkData>If you have cancelled an upgraded
+                        reservation, you must call Air Canada Reservations at
+                        1-800-247-2262 to request your refund.
+                    </common_v30_0:RemarkData>
+                </common_v30_0:RefundRemark>
+            </air:TCR>
+        </air:AirRefundRsp>
+    </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,5 @@
+<air:AirTicketingReq xmlns:air="http://www.travelport.com/schema/air_v33_0" AuthorizedBy="user" BulkTicket="false" ReturnInfoOnFail="true" TargetBranch="TRGT_BRCH" TraceId="trace">
+    <com:BillingPointOfSaleInfo xmlns:com="http://www.travelport.com/schema/common_v33_0" OriginApplication="UAPI"/>
+    <air:AirReservationLocatorCode>DXCW6Q</air:AirReservationLocatorCode>
+    <air:AirPricingInfoRef Key="B0wqpjg8TYazWWmbJ/+/9A=="/>
+</air:AirTicketingReq>

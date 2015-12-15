@@ -1,10 +1,10 @@
 <?php
 
 return ([
-    'branch' => 'P105219',
+    'branch' => '...',
     'provider' => '1G',
-    'username' => 'Universal API/uAPI3839144488',
-    'password' => 'd25tqZDSBjg73zjzYdhXDPk6G',
+    'username' => 'Universal API/...',
+    'password' => '...',
     'namespace' => [
         'air' => 'http://www.travelport.com/schema/air_v33_0',
         'com' => 'http://www.travelport.com/schema/common_v33_0'

@@ -1,0 +1,20 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <air:AirRefundReq xmlns:air="http://www.travelport.com/schema/air_v30_0" AuthorizedBy="user" TargetBranch="TRGT_BRCH" TraceId="trace">
+            <com:BillingPointOfSaleInfo xmlns:com="http://www.travelport.com/schema/common_v30_0" OriginApplication="UAPI"/>
+            <air:TCRRefundBundle RefundType="Auto" TCRNumber="61692">
+                <air:AirRefundInfo Refund="true"/>
+                <air:AirSegment ArrivalTime="2015-02-05T16:49:00.000-05:00" CabinClass="Economy" Carrier="AC" ChangeOfPlane="false" ClassOfService="L" DepartureTime="2015-02-05T09:00:00.000-08:00" Destination="YUL" ETicketability="Yes" Equipment="333" FlightNumber="150" FlightTime="289" Group="0" Key="X46MN7N0TU+p1D3iO8T31g==" OptionalServicesIndicator="false" Origin="YVR" PassiveProviderReservationInfoRef="l0dLmNe5R5ysIhIK2W+Dfw==" ProviderCode="ACH" ProviderReservationInfoRef="0Q6PCbOZS4Wr9vkGqYR1iQ==" Status="HK" SupplierCode="AC" TravelTime="289">
+                    <air:CodeshareInfo OperatingCarrier="AC" OperatingFlightNumber="150"/>
+                </air:AirSegment>
+                <air:AirSegment ArrivalTime="2015-02-10T16:10:00.000-08:00" CabinClass="Economy" Carrier="AC" ChangeOfPlane="false" ClassOfService="L" DepartureTime="2015-02-10T13:20:00.000-05:00" Destination="YVR" ETicketability="Yes" Equipment="320" FlightNumber="183" FlightTime="350" Group="1" Key="CwBN8Y9zQ2CRG7OBh3crUA==" OptionalServicesIndicator="false" Origin="YUL" PassiveProviderReservationInfoRef="l0dLmNe5R5ysIhIK2W+Dfw==" ProviderCode="ACH" ProviderReservationInfoRef="0Q6PCbOZS4Wr9vkGqYR1iQ==" Status="HK" SupplierCode="AC" TravelTime="350">
+                    <air:CodeshareInfo OperatingCarrier="AC" OperatingFlightNumber="183"/>
+                </air:AirSegment>
+                <common_v30_0:HostToken xmlns:common_v30_0="http://www.travelport.com/schema/common_v30_0">
+                    H4sIAAAAAAAAAFvzloG1hIHVzcfF0RkA3pudrwwAAAA={IS@@@}rO0ABXNyAFBjb20udHJhdmVscG9ydC5nYWxpbGVvLnNlcnZpY2VzLmFjaC5haXJjb21tb25hcGkuZGF0YW9iamVjdHMuc2Vzc2lvbi5TZXNzaW9uRGF0YQAAAAAAABAAAgAMWgAKcHJpY2VkSXRpbkwAC2FkYXB0ZXJDb2RldAASTGphdmEvbGFuZy9TdHJpbmc7TAAPYXBpc1JlcXVpcmVtZW50dABbTGNvbS90cmF2ZWxwb3J0L2dhbGlsZW8vc2VydmljZXMvYWNoL2FpcmNvbW1vbmFwaS9kYXRhb2JqZWN0cy9zZXNzaW9uL2FwaXMvQVBJU1JlcXVpcmVtZW50O0wAEmJyYW5kZWRGYXJlU2Vzc2lvbnQAW0xjb20vdHJhdmVscG9ydC9nYWxpbGVvL3NlcnZpY2VzL2FjaC9haXJjb21tb25hcGkvZGF0YW9iamVjdHMvc2Vzc2lvbi9CcmFuZGVkRmFyZVNlc3Npb25ETztMAAxjdXJyZW5jeUNvZGVxAH4AAUwAE2ZsaWdodFBhc3NFY2hvVG9rZW5xAH4AAUwADnBhc3NlbmdlckZhcmVzdAAPTGphdmEvdXRpbC9NYXA7TAAicGFzc2VuZ2VyU2VnbWVudFNlc3Npb25JbmZvcm1hdGlvbnEAfgAETAAec2F2ZWRTZWdtZW50U2Vzc2lvbkluZm9ybWF0aW9ucQB+AAFMABlzZWdtZW50U2Vzc2lvbkluZm9ybWF0aW9ucQB+AAFMACBzZWdtZW50VXBncmFkZVNlc3Npb25JbmZvcm1hdGlvbnEAfgAETAARdmVuZG9yU2Vzc2lvbkRhdGF0AFhMY29tL3RyYXZlbHBvcnQvZ2FsaWxlby9zZXJ2aWNlcy9hY2gvYWlyY29tbW9uYXBpL2RhdGFvYmplY3RzL3Nlc3Npb24vVmVuZG9yU2Vzc2lvbkRhdGE7eHAAdAAFRkxEQUNwcHBwcHBwcHNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAACdAADUG5ydAAGUEYzSjVBdAACQ0x0AKBvV0EzSDQ5NjA1THZ5WjhVNGFjM2ZtMmtIMW16dytKaTlGNXFrcm9jZkRCaTN0OGRwZTdpZXE5YlJTWXZDUkVoN2JsVlZJR3FEa0loSWZyU2FQUFpBM3NmWW5TUzhyb0cvOHRUYzRXeFJUN1lzRnd6WXNFK1Y2NnNNVlZzd2NQa3htanRhYXlhMmxmbktOYmV5cUtYOXBSWno0eDZOYk1teHA=
+                </common_v30_0:HostToken>
+            </air:TCRRefundBundle>
+        </air:AirRefundReq>
+    </soapenv:Body>
+</soapenv:Envelope>

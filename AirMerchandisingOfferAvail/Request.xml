@@ -1,0 +1,46 @@
+<!--Release 33-->
+<!--Version Dated as of 10/Sep/2015 20:08:02-->
+<!--Air merchandising offer search For Galileo(1G) with for merchandising Request-->
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <air:AirMerchandisingOfferAvailabilityReq
+            xmlns:air="http://www.travelport.com/schema/air_v33_0"
+            xmlns:common_v33_0="http://www.travelport.com/schema/common_v33_0"
+            TargetBranch="TRGT_BRCH" TraceId="trace">
+            <com:BillingPointOfSaleInfo
+                xmlns:com="http://www.travelport.com/schema/common_v33_0"
+                OriginApplication="UAPI"/>
+            <air:AirSolution>
+                <air:AirSegment ArrivalTime="2015-11-27T18:10:00.000-05:00"
+                                CabinClass="Economy" Carrier="DL"
+                                ChangeOfPlane="false" ClassOfService="Q"
+                                DepartureTime="2015-11-27T13:15:00.000-07:00"
+                                Destination="ATL" Distance="1207"
+                                ETicketability="Yes" ElStat="A" Equipment="737"
+                                FlightNumber="1916" Group="0"
+                                GuaranteedPaymentCarrier="No"
+                                Key="cyzNMEVmRZuxcB6l1MhmOw=="
+                                LinkAvailability="true"
+                                OptionalServicesIndicator="false" Origin="DEN"
+                                ParticipantLevel="Secure Sell" ProviderCode="1G"
+                                ProviderReservationInfoRef="g/OBlvxvSv6jIKbNVSzR+A=="
+                                Status="HK" TravelOrder="1" TravelTime="175">
+                    <air:FlightDetails
+                        ArrivalTime="2015-11-27T18:10:00.000-05:00"
+                        DepartureTime="2015-11-27T13:15:00.000-07:00"
+                        Destination="ATL" DestinationTerminal="S" ElStat="A"
+                        Equipment="757" FlightTime="175"
+                        Key="Fn301iT0TOmWf9Tl+zpkhg==" Origin="DEN"
+                        TravelTime="175"/>
+                    <common_v33_0:SellMessage>ARRIVES ATL TERMINAL S
+                    </common_v33_0:SellMessage>
+                    <common_v33_0:SellMessage>*6**SKY PRIORITY IN F*
+                    </common_v33_0:SellMessage>
+                </air:AirSegment>
+            </air:AirSolution>
+            <air:OfferAvailabilityModifiers>
+                <air:ServiceType>PreReservedSeatAssignment</air:ServiceType>
+            </air:OfferAvailabilityModifiers>
+        </air:AirMerchandisingOfferAvailabilityReq>
+    </soap:Body>
+</soap:Envelope>
