@@ -36,7 +36,7 @@ $request = $client->__doRequest("
           <Country>US</Country>
         </Address>
       </BookingTraveler>
-      <FormOfPayment xmlns=\"http://www.travelport.com/schema/common_v33_0\" IsAgentType=\"true\" Type=\"Cash\"></FormOfPayment>
+      <FormOfPayment xmlns=\"http://www.travelport.com/schema/common_v33_0\" IsAgentType=\"true\" Type=\"Requisition\"></FormOfPayment>
       <AirPricingSolution xmlns=\"http://www.travelport.com/schema/air_v33_0\" Key=\"sXIxoxuFQcWOcFiKzw91Rw==\" TotalPrice=\"GBP214.60\" BasePrice=\"JPY30400\" ApproximateTotalPrice=\"GBP214.60\" ApproximateBasePrice=\"GBP163.00\" EquivalentBasePrice=\"GBP163.00\" Taxes=\"GBP51.60\">
         <AirSegment Key=\"N5kG5xhmSoSB4BVRCVB9IA==\" OptionalServicesIndicator=\"false\" AvailabilityDisplayType=\"Fare Specific Fare Quote Unbooked\" Group=\"0\" Carrier=\"SU\" FlightNumber=\"261\" Origin=\"NRT\" Destination=\"SVO\" DepartureTime=\"2015-12-16T13:10:00.000+09:00\" ArrivalTime=\"2015-12-16T17:35:00.000+03:00\" FlightTime=\"625\" TravelTime=\"625\" Distance=\"4664\" ProviderCode=\"1G\" ClassOfService=\"T\" />
         <AirSegment Key=\"Wejc2CxISvWriiYx/dERgg==\" OptionalServicesIndicator=\"false\" AvailabilityDisplayType=\"Fare Specific Fare Quote Unbooked\" Group=\"0\" Carrier=\"SU\" FlightNumber=\"2134\" Origin=\"SVO\" Destination=\"IST\" DepartureTime=\"2015-12-16T21:45:00.000+03:00\" ArrivalTime=\"2015-12-17T00:30:00.000+02:00\" FlightTime=\"225\" TravelTime=\"225\" Distance=\"1089\" ProviderCode=\"1G\" ClassOfService=\"T\" />

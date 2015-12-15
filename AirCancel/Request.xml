@@ -1,6 +1,14 @@
-<AirCancelReq xmlns="http://www.travelport.com/schema/universal_v33_0" TraceId="92799455-dc55-44cd-83a2-04c0aff9d9ba" AuthorizedBy="Travelport" TargetBranch="P105219" Version="0">
-    <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v33_0" OriginApplication="uAPI" />
-    <AirReservationLocatorCode xmlns="http://www.travelport.com/schema/air_v33_0">M9L407</AirReservationLocatorCode>
-    <AirSegmentRef xmlns="http://www.travelport.com/schema/air_v33_0" Key="PDSoPy6/TIKVV2SFlrsCTw==" />
-    <AirSegmentRef xmlns="http://www.travelport.com/schema/air_v33_0" Key="RCTldAeNSVmT3HQ7sTAblA==" />
+<AirCancelReq xmlns="http://www.travelport.com/schema/universal_v33_0"
+              TraceId="92799455-dc55-44cd-83a2-04c0aff9d9ba"
+              AuthorizedBy="Travelport" TargetBranch="P105219" Version="0">
+    <BillingPointOfSaleInfo
+        xmlns="http://www.travelport.com/schema/common_v33_0"
+        OriginApplication="uAPI"/>
+    <AirReservationLocatorCode
+        xmlns="http://www.travelport.com/schema/air_v33_0">M9L407
+    </AirReservationLocatorCode>
+    <AirSegmentRef xmlns="http://www.travelport.com/schema/air_v33_0"
+                   Key="PDSoPy6/TIKVV2SFlrsCTw=="/>
+    <AirSegmentRef xmlns="http://www.travelport.com/schema/air_v33_0"
+                   Key="RCTldAeNSVmT3HQ7sTAblA=="/>
 </AirCancelReq>
