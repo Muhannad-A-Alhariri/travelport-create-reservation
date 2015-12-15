@@ -1,0 +1,148 @@
+<universal:UniversalRecordRetrieveRsp xmlns:universal="http://www.travelport.com/schema/universal_v33_0" xmlns:common_v33_0="http://www.travelport.com/schema/common_v33_0" xmlns:air="http://www.travelport.com/schema/air_v33_0" TraceId="81515531-d491-4611-bd08-2db74a82f2af" TransactionId="A51AB6FC0A07643C59DC8A700BB1658E" ResponseTime="403">
+    <universal:UniversalRecord LocatorCode="K8GWPM" Version="1" Status="Active">
+        <common_v33_0:BookingTraveler Key="Vm5XZjVvRXFYVFRsNlU1Qg==" TravelerType="ADT" Age="40" DOB="1975-12-15" Gender="M">
+            <common_v33_0:BookingTravelerName Prefix="Mr" First="John" Last="Smith" />
+            <common_v33_0:DeliveryInfo>
+                <common_v33_0:ShippingAddress Key="Vm5XZjVvRXFYVFRsNlU1Qg==">
+                    <common_v33_0:AddressName>JOHNMR SMITH</common_v33_0:AddressName>
+                    <common_v33_0:Street>Via Augusta 59 5</common_v33_0:Street>
+                    <common_v33_0:City>Madrid</common_v33_0:City>
+                    <common_v33_0:State>IA</common_v33_0:State>
+                    <common_v33_0:PostalCode>50156</common_v33_0:PostalCode>
+                    <common_v33_0:Country>US</common_v33_0:Country>
+                    <common_v33_0:ProviderReservationInfoRef Key="N4SpgDOnT5WDqpnk086uJQ==" />
+                </common_v33_0:ShippingAddress>
+                <common_v33_0:ProviderReservationInfoRef Key="N4SpgDOnT5WDqpnk086uJQ==" />
+            </common_v33_0:DeliveryInfo>
+            <common_v33_0:PhoneNumber Key="vMbF6ndiR0OlzS3JI2bafQ==" Type="None" Location="DEN" CountryCode="1" Number="123456789" AreaCode="303">
+                <common_v33_0:ProviderReservationInfoRef Key="N4SpgDOnT5WDqpnk086uJQ==" />
+            </common_v33_0:PhoneNumber>
+            <common_v33_0:Email Key="4+E6S8tkQzupOUBsm59CqA==" EmailID="johnsmith@travelportuniversalapidemo.com">
+                <common_v33_0:ProviderReservationInfoRef Key="N4SpgDOnT5WDqpnk086uJQ==" />
+            </common_v33_0:Email>
+            <common_v33_0:Address Key="Of+VV0gWTruNJois1jpCeg==">
+                <common_v33_0:AddressName>DemoSiteAddress</common_v33_0:AddressName>
+                <common_v33_0:Street>Via Augusta 59 5</common_v33_0:Street>
+                <common_v33_0:City>Madrid</common_v33_0:City>
+                <common_v33_0:State>IA</common_v33_0:State>
+                <common_v33_0:PostalCode>50156</common_v33_0:PostalCode>
+                <common_v33_0:Country>US</common_v33_0:Country>
+                <common_v33_0:ProviderReservationInfoRef Key="N4SpgDOnT5WDqpnk086uJQ==" />
+            </common_v33_0:Address>
+        </common_v33_0:BookingTraveler>
+        <common_v33_0:BookingTraveler Key="T0E2MzZ6azhHRmtxUnM2dg==" TravelerType="CNN" Age="10" DOB="2005-12-15" Gender="M">
+            <common_v33_0:BookingTravelerName Prefix="Mr" First="Michael" Last="Scott" />
+            <common_v33_0:PhoneNumber Key="sHIzb00oSp6eEwPkHg7qtw==" Type="None" Location="DEN" CountryCode="1" Number="123456789" AreaCode="303">
+                <common_v33_0:ProviderReservationInfoRef Key="N4SpgDOnT5WDqpnk086uJQ==" />
+            </common_v33_0:PhoneNumber>
+            <common_v33_0:Email Key="pEkubNo5QuaiK7heaRFhxg==" EmailID="MichaelScott@travelportuniversalapidemo.com">
+                <common_v33_0:ProviderReservationInfoRef Key="N4SpgDOnT5WDqpnk086uJQ==" />
+            </common_v33_0:Email>
+            <common_v33_0:Address Key="fX+/kwwPRcKaCHYBAt754w==">
+                <common_v33_0:AddressName>DemoSiteAddress</common_v33_0:AddressName>
+                <common_v33_0:Street>Via Augusta 59 5</common_v33_0:Street>
+                <common_v33_0:City>Madrid</common_v33_0:City>
+                <common_v33_0:State>IA</common_v33_0:State>
+                <common_v33_0:PostalCode>50156</common_v33_0:PostalCode>
+                <common_v33_0:Country>US</common_v33_0:Country>
+            </common_v33_0:Address>
+        </common_v33_0:BookingTraveler>
+        <common_v33_0:ActionStatus Key="f9SMC6EdT1m1w5rmAvjdNQ==" Type="ACTIVE" ProviderReservationInfoRef="N4SpgDOnT5WDqpnk086uJQ==" ProviderCode="1G" />
+        <universal:ProviderReservationInfo Key="N4SpgDOnT5WDqpnk086uJQ==" ProviderCode="1G" LocatorCode="7PGBBM" CreateDate="2015-12-15T10:04:09.623+00:00" ModifiedDate="2015-12-15T10:04:51.993+00:00" HostCreateDate="2015-12-15" OwningPCC="6G2D" />
+        <air:AirReservation LocatorCode="KBW8CD" CreateDate="2015-12-15T10:04:09.114+00:00" ModifiedDate="2015-12-15T10:04:51.993+00:00">
+            <common_v33_0:SupplierLocator SupplierCode="SU" SupplierLocatorCode="HRNTGV" ProviderReservationInfoRef="N4SpgDOnT5WDqpnk086uJQ==" CreateDateTime="2015-12-15T10:04:00.000+00:00" />
+            <common_v33_0:BookingTravelerRef Key="Vm5XZjVvRXFYVFRsNlU1Qg==" />
+            <common_v33_0:BookingTravelerRef Key="T0E2MzZ6azhHRmtxUnM2dg==" />
+            <common_v33_0:ProviderReservationInfoRef Key="N4SpgDOnT5WDqpnk086uJQ==" />
+            <air:AirSegment Key="Atlvw1H1SumrVBMvpTDrbg==" Group="0" Carrier="SU" CabinClass="Economy" FlightNumber="261" ProviderCode="1G" Origin="NRT" Destination="SVO" DepartureTime="2015-12-16T13:10:00.000+09:00" ArrivalTime="2015-12-16T17:35:00.000+03:00" TravelTime="625" Distance="4664" ClassOfService="T" ETicketability="Yes" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="N4SpgDOnT5WDqpnk086uJQ==" TravelOrder="1" OptionalServicesIndicator="false">
+                <air:FlightDetails Key="vNksRxGBT86yU1uZLDx3Ug==" Origin="NRT" Destination="SVO" DepartureTime="2015-12-16T13:10:00.000+09:00" ArrivalTime="2015-12-16T17:35:00.000+03:00" FlightTime="625" TravelTime="625" Equipment="333" OriginTerminal="1" DestinationTerminal="D" />
+                <common_v33_0:SellMessage>DEPARTS NRT TERMINAL 1  - ARRIVES SVO TERMINAL D</common_v33_0:SellMessage>
+                <common_v33_0:SellMessage>*010 GA 9404*</common_v33_0:SellMessage>
+                <common_v33_0:SellMessage>ADD ADVANCE PASSENGER INFORMATION SSRS DOCA/DOCO/DOCS</common_v33_0:SellMessage>
+                <common_v33_0:SellMessage>PERSONAL DATA WHICH IS PROVIDED TO US IN CONNECTION</common_v33_0:SellMessage>
+                <common_v33_0:SellMessage>WITH YOUR TRAVEL MAY BE PASSED TO GOVERNMENT AUTHORITIES</common_v33_0:SellMessage>
+                <common_v33_0:SellMessage>FOR BORDER CONTROL AND AVIATION SECURITY PURPOSES</common_v33_0:SellMessage>
+            </air:AirSegment>
+            <air:AirSegment Key="uokcWGlPQOquYRP66c646A==" Group="1" Carrier="SU" CabinClass="Economy" FlightNumber="2134" ProviderCode="1G" Origin="SVO" Destination="IST" DepartureTime="2015-12-16T21:45:00.000+03:00" ArrivalTime="2015-12-17T00:30:00.000+02:00" TravelTime="225" Distance="1089" ClassOfService="T" ETicketability="Yes" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="N4SpgDOnT5WDqpnk086uJQ==" TravelOrder="2" OptionalServicesIndicator="false">
+                <air:FlightDetails Key="xvfPOEFbQ4mCKOzOb0hYug==" Origin="SVO" Destination="IST" DepartureTime="2015-12-16T21:45:00.000+03:00" ArrivalTime="2015-12-17T00:30:00.000+02:00" FlightTime="225" TravelTime="225" Equipment="320" OriginTerminal="F" DestinationTerminal="I" />
+                <common_v33_0:SellMessage>DEPARTS SVO TERMINAL F  - ARRIVES IST TERMINAL I</common_v33_0:SellMessage>
+                <common_v33_0:SellMessage>ADD ADVANCE PASSENGER INFORMATION SSRS DOCA/DOCO/DOCS</common_v33_0:SellMessage>
+                <common_v33_0:SellMessage>PERSONAL DATA WHICH IS PROVIDED TO US IN CONNECTION</common_v33_0:SellMessage>
+                <common_v33_0:SellMessage>WITH YOUR TRAVEL MAY BE PASSED TO GOVERNMENT AUTHORITIES</common_v33_0:SellMessage>
+                <common_v33_0:SellMessage>FOR BORDER CONTROL AND AVIATION SECURITY PURPOSES</common_v33_0:SellMessage>
+            </air:AirSegment>
+            <air:AirPricingInfo Key="EQLvlZEnSGaMuZkedNcvrg==" TotalPrice="GBP214.60" BasePrice="JPY30400" ApproximateTotalPrice="GBP214.60" ApproximateBasePrice="GBP163.00" EquivalentBasePrice="GBP163.00" Taxes="GBP51.60" LatestTicketingTime="2015-12-16T23:59:00.000+00:00" TrueLastDateToTicket="2015-12-16T23:59:00.000+00:00" PricingMethod="Guaranteed" Exchangeable="true" IncludesVAT="false" ETicketability="Yes" ProviderCode="1G" ProviderReservationInfoRef="N4SpgDOnT5WDqpnk086uJQ==" AirPricingInfoGroup="1" PricingType="StoredFare">
+                <air:FareInfo Key="7YWHaPuTSLCQIrFzNf2igg==" FareBasis="TPXOW" PassengerTypeCode="ADT" Origin="NRT" Destination="SVO" EffectiveDate="2015-12-15T00:00:00.000+00:00" NotValidBefore="2015-12-16" NotValidAfter="2015-12-16" PseudoCityCode="6G2D">
+                    <common_v33_0:Endorsement Value="NONREF/HEBO3BPATEH" />
+                    <air:BaggageAllowance>
+                        <air:NumberOfPieces>1</air:NumberOfPieces>
+                    </air:BaggageAllowance>
+                </air:FareInfo>
+                <air:FareInfo Key="pzIwZRzWTXqF237gUXwz6g==" FareBasis="TPXOW" PassengerTypeCode="ADT" Origin="SVO" Destination="IST" EffectiveDate="2015-12-15T00:00:00.000+00:00" Amount="NUC253.12" NotValidBefore="2015-12-16" NotValidAfter="2015-12-16" PseudoCityCode="6G2D">
+                    <common_v33_0:Endorsement Value="NONREF/HEBO3BPATEH" />
+                    <air:BaggageAllowance>
+                        <air:NumberOfPieces>1</air:NumberOfPieces>
+                    </air:BaggageAllowance>
+                </air:FareInfo>
+                <air:BookingInfo BookingCode="T" CabinClass="Economy" FareInfoRef="7YWHaPuTSLCQIrFzNf2igg==" SegmentRef="Atlvw1H1SumrVBMvpTDrbg==" />
+                <air:BookingInfo BookingCode="T" CabinClass="Economy" FareInfoRef="pzIwZRzWTXqF237gUXwz6g==" SegmentRef="uokcWGlPQOquYRP66c646A==" />
+                <air:TaxInfo Category="OI" Amount="GBP2.80" Key="9QgoySLFQzKYQRxGXfQFlw==" />
+                <air:TaxInfo Category="SW" Amount="GBP11.20" Key="/F2NcWPJS0qM5TCQgD59Hw==" />
+                <air:TaxInfo Category="YQ" Amount="GBP37.60" Key="fxRMkmvTT1K4eKMvo0GK/A==" />
+                <air:FareCalc>TYO SU X/MOW SU IST 253.12TPXOW NUC253.12END ROE120.101</air:FareCalc>
+                <air:PassengerType Code="ADT" Age="40" BookingTravelerRef="Vm5XZjVvRXFYVFRsNlU1Qg==">
+                    <air:FareGuaranteeInfo GuaranteeDate="2015-12-15" GuaranteeType="Guaranteed" />
+                </air:PassengerType>
+                <common_v33_0:BookingTravelerRef Key="Vm5XZjVvRXFYVFRsNlU1Qg==" />
+                <air:TicketingModifiersRef Key="ic5m3vh3Qsyn5gjsOpgG1w==" />
+            </air:AirPricingInfo>
+            <air:AirPricingInfo Key="p23pCkAHSs2lo0ofFr8rNw==" TotalPrice="GBP169.00" BasePrice="JPY22800" ApproximateTotalPrice="GBP169.00" ApproximateBasePrice="GBP123.00" EquivalentBasePrice="GBP123.00" Taxes="GBP46.00" LatestTicketingTime="2015-12-16T23:59:00.000+00:00" TrueLastDateToTicket="2015-12-16T23:59:00.000+00:00" PricingMethod="Guaranteed" Exchangeable="true" IncludesVAT="false" ETicketability="Yes" ProviderCode="1G" ProviderReservationInfoRef="N4SpgDOnT5WDqpnk086uJQ==" AirPricingInfoGroup="1" PricingType="StoredFare">
+                <air:FareInfo Key="uqRIu9v5SmC4WBfvEZ9mxA==" FareBasis="TPXOW/CH" PassengerTypeCode="CNN" Origin="NRT" Destination="SVO" EffectiveDate="2015-12-15T00:00:00.000+00:00" NotValidBefore="2015-12-16" NotValidAfter="2015-12-16" PseudoCityCode="6G2D">
+                    <air:FareTicketDesignator Value="25" />
+                    <common_v33_0:Endorsement Value="NONREF/HEBO3BPATEH" />
+                    <air:BaggageAllowance>
+                        <air:NumberOfPieces>1</air:NumberOfPieces>
+                    </air:BaggageAllowance>
+                </air:FareInfo>
+                <air:FareInfo Key="Jlbf3CJ/TJ2sEAMz1OdkWg==" FareBasis="TPXOW/CH" PassengerTypeCode="CNN" Origin="SVO" Destination="IST" EffectiveDate="2015-12-15T00:00:00.000+00:00" Amount="NUC189.84" NotValidBefore="2015-12-16" NotValidAfter="2015-12-16" PseudoCityCode="6G2D">
+                    <air:FareTicketDesignator Value="25" />
+                    <common_v33_0:Endorsement Value="NONREF/HEBO3BPATEH" />
+                    <air:BaggageAllowance>
+                        <air:NumberOfPieces>1</air:NumberOfPieces>
+                    </air:BaggageAllowance>
+                </air:FareInfo>
+                <air:BookingInfo BookingCode="T" CabinClass="Economy" FareInfoRef="uqRIu9v5SmC4WBfvEZ9mxA==" SegmentRef="Atlvw1H1SumrVBMvpTDrbg==" />
+                <air:BookingInfo BookingCode="T" CabinClass="Economy" FareInfoRef="Jlbf3CJ/TJ2sEAMz1OdkWg==" SegmentRef="uokcWGlPQOquYRP66c646A==" />
+                <air:TaxInfo Category="OI" Amount="GBP2.80" Key="J6+8Ei5sRkq2AyDJg2Xkvw==" />
+                <air:TaxInfo Category="SW" Amount="GBP5.60" Key="L4BCRUA6S9inS6Q1KM79mg==" />
+                <air:TaxInfo Category="YQ" Amount="GBP37.60" Key="m5PZgr6US0eQdaZIwBFxLg==" />
+                <air:FareCalc>TYO SU X/MOW SU IST 189.84TPXOW/CH25 NUC189.84END ROE120.101</air:FareCalc>
+                <air:PassengerType Code="CNN" Age="10" BookingTravelerRef="T0E2MzZ6azhHRmtxUnM2dg==">
+                    <air:FareGuaranteeInfo GuaranteeDate="2015-12-15" GuaranteeType="Guaranteed" />
+                </air:PassengerType>
+                <common_v33_0:BookingTravelerRef Key="T0E2MzZ6azhHRmtxUnM2dg==" />
+                <air:TicketingModifiersRef Key="ic5m3vh3Qsyn5gjsOpgG1w==" />
+            </air:AirPricingInfo>
+            <air:TicketingModifiers PlatingCarrier="SU" Key="ic5m3vh3Qsyn5gjsOpgG1w==">
+                <air:DocumentSelect IssueElectronicTicket="true" />
+            </air:TicketingModifiers>
+        </air:AirReservation>
+        <common_v33_0:AgencyInfo>
+            <common_v33_0:AgentAction ActionType="Created" AgentCode="UAPI6293555720" BranchCode="P105273" AgencyCode="S30126" EventTime="2015-12-15T10:04:03.756+00:00" />
+            <common_v33_0:AgentAction ActionType="Modified" AgentCode="UAPI6293555720" BranchCode="P105273" AgencyCode="S30126" EventTime="2015-12-15T10:04:51.993+00:00" />
+        </common_v33_0:AgencyInfo>
+        <common_v33_0:FormOfPayment Key="3lHxwNpYRzaKAnb0dtucYA==" Type="Credit" Reusable="true" ProfileKey="NSwtkUtBS66tkUlguo2yNQ==">
+            <common_v33_0:CreditCard Type="VI" Number="************1111" ExpDate="2015-12" Name="John Smith">
+                <common_v33_0:BillingAddress Key="hrvzlRjHRaSC4jTB5jgnJA==">
+                    <common_v33_0:AddressName>DemoSiteAddress</common_v33_0:AddressName>
+                    <common_v33_0:Street>Via Augusta 59 5</common_v33_0:Street>
+                    <common_v33_0:City>Madrid</common_v33_0:City>
+                    <common_v33_0:State>IA</common_v33_0:State>
+                    <common_v33_0:PostalCode>50156</common_v33_0:PostalCode>
+                    <common_v33_0:Country>US</common_v33_0:Country>
+                </common_v33_0:BillingAddress>
+            </common_v33_0:CreditCard>
+            <common_v33_0:ProviderReservationInfoRef Key="N4SpgDOnT5WDqpnk086uJQ==" />
+        </common_v33_0:FormOfPayment>
+    </universal:UniversalRecord>
+</universal:UniversalRecordRetrieveRsp>

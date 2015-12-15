@@ -1,0 +1,4 @@
+<UniversalRecordRetrieveReq xmlns="http://www.travelport.com/schema/universal_v33_0" TraceId="81515531-d491-4611-bd08-2db74a82f2af" AuthorizedBy="Travelport" TargetBranch="P105273">
+    <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v33_0" OriginApplication="uAPI" />
+    <UniversalRecordLocatorCode>K8GWPM</UniversalRecordLocatorCode>
+</UniversalRecordRetrieveReq>
