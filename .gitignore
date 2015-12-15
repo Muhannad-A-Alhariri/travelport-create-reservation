@@ -1,4 +1,5 @@
+.DS_Store
+config.php
 /.idea/
 /vendor/
-config.php
 /backups/
