@@ -3,3 +3,4 @@
 **Carrier:** The carrier that is marketing this segment
 
 **ETicketability:** Identifies if this particular segment is E-Ticketable
+*Yes , No , Required , Ticketless*
