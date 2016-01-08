@@ -1,0 +1,16 @@
+<!--Release 34-->
+<!--Version Dated as of 17/Oct/2015 14:37:31-->
+<!--GDS Queue Place For Galileo(1G) Request-->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:com="http://www.travelport.com/schema/common_v34_0"
+                  xmlns:gds="http://www.travelport.com/schema/gdsQueue_v34_0">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gds:GdsQueuePlaceReq AuthorizedBy="user" ProviderCode="1G"
+                              ProviderLocatorCode="BQ3MTG" PseudoCityCode="PCC"
+                              TargetBranch="TRGT_BRCH" TraceId="trace">
+            <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+            <com:QueueSelector Queue="20"/>
+        </gds:GdsQueuePlaceReq>
+    </soapenv:Body>
+</soapenv:Envelope>

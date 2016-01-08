@@ -1,0 +1,13 @@
+<!--Version Dated as of 17/Oct/2015 14:37:37-->
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP:Body>
+        <gdsQueue:GdsExitQueueRsp
+            xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0"
+            xmlns:gdsQueue="http://www.travelport.com/schema/gdsQueue_v34_0"
+            ResponseTime="762" TransactionId="AD0D15640A07761E2B66C880A6520096">
+            <common_v34_0:ResponseMessage Code="0" Type="Info">Universal Record
+                DXFZ63 still on queue 20
+            </common_v34_0:ResponseMessage>
+        </gdsQueue:GdsExitQueueRsp>
+    </SOAP:Body>
+</SOAP:Envelope>

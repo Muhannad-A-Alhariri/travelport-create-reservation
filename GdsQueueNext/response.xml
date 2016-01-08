@@ -1,0 +1,245 @@
+<!--Version Dated as of 17/Oct/2015 14:37:34-->
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP:Body>
+        <gdsQueue:GdsNextOnQueueRsp
+            xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0"
+            xmlns:gdsQueue="http://www.travelport.com/schema/gdsQueue_v34_0"
+            QueueSessionToken="AD0C4F190A07761F5DE455D830AE8FF8"
+            ResponseTime="3172"
+            TransactionId="AD0C461F0A07761F5DE455D8EA1DE8BB">
+            <common_v34_0:ResponseMessage Code="6276" Type="Warning">Please use
+                GDSNextonQueueReq to get the next PNR in queue or use
+                GDSExitQueueReq to exit the queue.
+            </common_v34_0:ResponseMessage>
+            <common_v34_0:ResponseMessage Code="0" Type="Info">Universal Record
+                DXFNJJ still on queue 20
+            </common_v34_0:ResponseMessage>
+            <common_v34_0:ResponseMessage Code="6211" Type="Info">PNR in Queue
+                Mode: 1G-C4XFCE
+            </common_v34_0:ResponseMessage>
+            <universal:UniversalRecord
+                xmlns:air="http://www.travelport.com/schema/air_v34_0"
+                xmlns:universal="http://www.travelport.com/schema/universal_v34_0"
+                LocatorCode="DXFZ63" Status="Active" Version="1">
+                <common_v34_0:BookingTraveler Key="Szi2FM47R3aujzMuyjhu+w=="
+                                              TravelerType="ADT">
+                    <common_v34_0:BookingTravelerName First="First"
+                                                      Last="Traveler"/>
+                    <common_v34_0:PhoneNumber CountryCode="011"
+                                              Key="JhWtvvLYROK7JohxDnAvXA=="
+                                              Location="ATL" Number="3332147895"
+                                              Text="Home-phone" Type="Home">
+                        <common_v34_0:ProviderReservationInfoRef
+                            Key="Vjv9e5bdROKAyv8rgYBiuw=="/>
+                    </common_v34_0:PhoneNumber>
+                    <common_v34_0:Email EmailID="test@travelport.com"
+                                        Key="VXmN2lq0Q9KpQnAcNpIvoQ=="
+                                        Type="Home">
+                        <common_v34_0:ProviderReservationInfoRef
+                            Key="Vjv9e5bdROKAyv8rgYBiuw=="/>
+                    </common_v34_0:Email>
+                    <common_v34_0:Address Key="SBIBwbN6Qx6/bbmjsuB1Uw==">
+                        <common_v34_0:AddressName>AUSTIN FRASER
+                        </common_v34_0:AddressName>
+                        <common_v34_0:Street>6901 S. Havana
+                        </common_v34_0:Street>
+                        <common_v34_0:Street>Apt 2</common_v34_0:Street>
+                        <common_v34_0:City>Englewood</common_v34_0:City>
+                        <common_v34_0:State>CO</common_v34_0:State>
+                        <common_v34_0:PostalCode>80111</common_v34_0:PostalCode>
+                        <common_v34_0:Country>US</common_v34_0:Country>
+                        <common_v34_0:ProviderReservationInfoRef
+                            Key="Vjv9e5bdROKAyv8rgYBiuw=="/>
+                    </common_v34_0:Address>
+                </common_v34_0:BookingTraveler>
+                <common_v34_0:BookingTraveler Key="anA9cCQ3S9KLWGPJk0ynbA=="
+                                              TravelerType="SRC">
+                    <common_v34_0:BookingTravelerName First="Second"
+                                                      Last="Traveler"/>
+                    <common_v34_0:PhoneNumber CountryCode="011"
+                                              Key="XU9CU4ofR/qX0yJxy9sqDQ=="
+                                              Location="ATL" Number="3332147895"
+                                              Text="Home-phone" Type="Home">
+                        <common_v34_0:ProviderReservationInfoRef
+                            Key="Vjv9e5bdROKAyv8rgYBiuw=="/>
+                    </common_v34_0:PhoneNumber>
+                    <common_v34_0:Email EmailID="test@travelport.com"
+                                        Key="T2wm+RVwSQOsJksvebps9w=="
+                                        Type="Home">
+                        <common_v34_0:ProviderReservationInfoRef
+                            Key="Vjv9e5bdROKAyv8rgYBiuw=="/>
+                    </common_v34_0:Email>
+                    <common_v34_0:Address Key="TVOk8XYnT6C9zlD3DtiOHw==">
+                        <common_v34_0:AddressName>AUSTIN FRASER
+                        </common_v34_0:AddressName>
+                        <common_v34_0:Street>6901 S. Havana
+                        </common_v34_0:Street>
+                        <common_v34_0:Street>Apt 2</common_v34_0:Street>
+                        <common_v34_0:City>Englewood</common_v34_0:City>
+                        <common_v34_0:State>CO</common_v34_0:State>
+                        <common_v34_0:PostalCode>80111</common_v34_0:PostalCode>
+                        <common_v34_0:Country>US</common_v34_0:Country>
+                    </common_v34_0:Address>
+                </common_v34_0:BookingTraveler>
+                <common_v34_0:ActionStatus Key="lpvE3+hSTlGb7ui271SEiA=="
+                                           ProviderCode="1G"
+                                           ProviderReservationInfoRef="Vjv9e5bdROKAyv8rgYBiuw=="
+                                           Type="ACTIVE"/>
+                <universal:ProviderReservationInfo
+                    CreateDate="2015-08-21T11:59:11.635+00:00"
+                    HostCreateDate="2015-08-21" InQueueMode="true"
+                    Key="Vjv9e5bdROKAyv8rgYBiuw==" LocatorCode="C4XFCE"
+                    ModifiedDate="2015-08-21T21:32:58.841+00:00"
+                    OwningPCC="5X19" ProviderCode="1G"/>
+                <air:AirReservation CreateDate="2015-08-21T11:59:10.204+00:00"
+                                    LocatorCode="DXFZ64"
+                                    ModifiedDate="2015-08-21T11:59:31.736+00:00">
+                    <common_v34_0:SupplierLocator
+                        CreateDateTime="2015-08-21T11:59:00.000+00:00"
+                        ProviderReservationInfoRef="Vjv9e5bdROKAyv8rgYBiuw=="
+                        SupplierCode="QF" SupplierLocatorCode="5R2F69"/>
+                    <common_v34_0:BookingTravelerRef
+                        Key="Szi2FM47R3aujzMuyjhu+w=="/>
+                    <common_v34_0:BookingTravelerRef
+                        Key="anA9cCQ3S9KLWGPJk0ynbA=="/>
+                    <common_v34_0:ProviderReservationInfoRef
+                        Key="Vjv9e5bdROKAyv8rgYBiuw=="/>
+                    <air:AirSegment ArrivalTime="2015-09-10T21:55:00.000+10:00"
+                                    CabinClass="Economy" Carrier="QF"
+                                    ChangeOfPlane="false" ClassOfService="E"
+                                    DepartureTime="2015-09-10T20:30:00.000+10:00"
+                                    Destination="SYD" Distance="456"
+                                    ETicketability="Yes" Equipment="737"
+                                    FlightNumber="492" Group="0"
+                                    GuaranteedPaymentCarrier="No"
+                                    Key="PPVRT27JSmSKIIB7Sq+wgw=="
+                                    LinkAvailability="true"
+                                    OptionalServicesIndicator="false"
+                                    Origin="MEL" ParticipantLevel="Secure Sell"
+                                    ProviderCode="1G"
+                                    ProviderReservationInfoRef="Vjv9e5bdROKAyv8rgYBiuw=="
+                                    Status="HK" TravelTime="85">
+                        <air:FlightDetails
+                            ArrivalTime="2015-09-10T21:55:00.000+10:00"
+                            DepartureTime="2015-09-10T20:30:00.000+10:00"
+                            Destination="SYD" DestinationTerminal="3"
+                            Equipment="73H" FlightTime="85"
+                            Key="uIXEoa74Qu+FkHAUt0KJ3Q==" Origin="MEL"
+                            OriginTerminal="1" TravelTime="85"/>
+                        <common_v34_0:SellMessage>DEPARTS MEL TERMINAL 1 -
+                            ARRIVES SYD TERMINAL 3
+                        </common_v34_0:SellMessage>
+                    </air:AirSegment>
+                    <air:AirPricingInfo AirPricingInfoGroup="1"
+                                        BasePrice="AUD94.79"
+                                        ETicketability="Yes" Exchangeable="true"
+                                        IncludesVAT="false"
+                                        Key="Ichn5lHQRIK3fQ5JDssCIA=="
+                                        LatestTicketingTime="2015-08-21T23:59:00.000+10:00"
+                                        PlatingCarrier="QF"
+                                        PricingMethod="GuaranteedUsingAirlinePrivateFare"
+                                        PricingType="StoredFare"
+                                        ProviderCode="1G"
+                                        ProviderReservationInfoRef="Vjv9e5bdROKAyv8rgYBiuw=="
+                                        Taxes="AUD24.37" TotalPrice="AUD119.16"
+                                        TrueLastDateToTicket="2015-08-21T23:59:00.000+10:00">
+                        <air:FareInfo Amount="AUD94.79" Destination="SYD"
+                                      EffectiveDate="2015-08-21T00:00:00.000+10:00"
+                                      FareBasis="EDEAL"
+                                      Key="ChOPa2xzRcS5fe0IN+fqXA=="
+                                      NotValidAfter="2015-09-10"
+                                      NotValidBefore="2015-09-10" Origin="MEL"
+                                      PassengerTypeCode="ADT"
+                                      PrivateFare="AirlinePrivateFare"
+                                      PseudoCityCode="PCC">
+                            <air:ContractCode Code="9684" ProviderCode="1G"/>
+                            <common_v34_0:Endorsement Value="NON-REF/NON-END"/>
+                            <common_v34_0:Endorsement
+                                Value="SPECIAL FARE CONDITIONS"/>
+                            <air:BaggageAllowance>
+                                <air:NumberOfPieces>1</air:NumberOfPieces>
+                            </air:BaggageAllowance>
+                        </air:FareInfo>
+                        <air:BookingInfo BookingCode="E" CabinClass="Economy"
+                                         FareInfoRef="ChOPa2xzRcS5fe0IN+fqXA=="
+                                         SegmentRef="PPVRT27JSmSKIIB7Sq+wgw=="/>
+                        <air:TaxInfo Amount="AUD8.01" Category="QR"
+                                     Key="XQ4NoZAsQAG9h8Nl+HH6zQ=="/>
+                        <air:TaxInfo Amount="AUD5.53" Category="WG"
+                                     Key="+OonAOtzR2q+LzHDTsSs1Q=="/>
+                        <air:TaxInfo Amount="AUD10.83" Category="UO"
+                                     Key="60gW5q1LTEySEvepFAx/Xg=="/>
+                        <air:FareCalc>MEL QF SYD 94.79EDEAL AUD94.79END
+                        </air:FareCalc>
+                        <air:PassengerType
+                            BookingTravelerRef="Szi2FM47R3aujzMuyjhu+w=="
+                            Code="ADT">
+                            <air:FareGuaranteeInfo
+                                GuaranteeType="GuaranteedUsingAirlinePrivateFare"/>
+                        </air:PassengerType>
+                        <common_v34_0:BookingTravelerRef
+                            Key="Szi2FM47R3aujzMuyjhu+w=="/>
+                        <air:TicketingModifiersRef
+                            Key="Hd38jyORTP+GitraFPRA8w=="/>
+                    </air:AirPricingInfo>
+                    <air:AirPricingInfo AirPricingInfoGroup="1"
+                                        BasePrice="AUD94.79"
+                                        ETicketability="Yes" Exchangeable="true"
+                                        IncludesVAT="false"
+                                        Key="BStCUv07QdCLEN2AzEDYjA=="
+                                        LatestTicketingTime="2015-08-21T23:59:00.000+10:00"
+                                        PlatingCarrier="QF"
+                                        PricingMethod="GuaranteedUsingAirlinePrivateFare"
+                                        PricingType="StoredFare"
+                                        ProviderCode="1G"
+                                        ProviderReservationInfoRef="Vjv9e5bdROKAyv8rgYBiuw=="
+                                        Taxes="AUD24.37" TotalPrice="AUD119.16"
+                                        TrueLastDateToTicket="2015-08-21T23:59:00.000+10:00">
+                        <air:FareInfo Amount="AUD94.79" Destination="SYD"
+                                      EffectiveDate="2015-08-21T00:00:00.000+10:00"
+                                      FareBasis="EDEAL"
+                                      Key="wKq0mAtNRSmv7hV0KNoApw=="
+                                      NotValidAfter="2015-09-10"
+                                      NotValidBefore="2015-09-10" Origin="MEL"
+                                      PassengerTypeCode="SRC"
+                                      PrivateFare="AirlinePrivateFare"
+                                      PseudoCityCode="PCC">
+                            <air:ContractCode Code="9684" ProviderCode="1G"/>
+                            <common_v34_0:Endorsement Value="NON-REF/NON-END"/>
+                            <common_v34_0:Endorsement
+                                Value="SPECIAL FARE CONDITIONS"/>
+                            <air:BaggageAllowance>
+                                <air:NumberOfPieces>1</air:NumberOfPieces>
+                            </air:BaggageAllowance>
+                        </air:FareInfo>
+                        <air:BookingInfo BookingCode="E" CabinClass="Economy"
+                                         FareInfoRef="wKq0mAtNRSmv7hV0KNoApw=="
+                                         SegmentRef="PPVRT27JSmSKIIB7Sq+wgw=="/>
+                        <air:TaxInfo Amount="AUD8.01" Category="QR"
+                                     Key="IZHp4Nr6Q72y0CbwvkfsBQ=="/>
+                        <air:TaxInfo Amount="AUD5.53" Category="WG"
+                                     Key="1fwL2fw7STuzeW1otw3ZBA=="/>
+                        <air:TaxInfo Amount="AUD10.83" Category="UO"
+                                     Key="ihLz+YN0RG6a2sMzP3R9/w=="/>
+                        <air:FareCalc>MEL QF SYD 94.79EDEAL AUD94.79END
+                        </air:FareCalc>
+                        <air:PassengerType
+                            BookingTravelerRef="anA9cCQ3S9KLWGPJk0ynbA=="
+                            Code="SRC">
+                            <air:FareGuaranteeInfo
+                                GuaranteeType="GuaranteedUsingAirlinePrivateFare"/>
+                        </air:PassengerType>
+                        <common_v34_0:BookingTravelerRef
+                            Key="anA9cCQ3S9KLWGPJk0ynbA=="/>
+                        <air:TicketingModifiersRef
+                            Key="Hd38jyORTP+GitraFPRA8w=="/>
+                    </air:AirPricingInfo>
+                    <air:TicketingModifiers Key="Hd38jyORTP+GitraFPRA8w=="
+                                            PlatingCarrier="QF">
+                        <air:DocumentSelect IssueElectronicTicket="true"/>
+                    </air:TicketingModifiers>
+                </air:AirReservation>
+            </universal:UniversalRecord>
+        </gdsQueue:GdsNextOnQueueRsp>
+    </SOAP:Body>
+</SOAP:Envelope>
