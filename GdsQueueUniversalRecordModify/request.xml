@@ -1,0 +1,31 @@
+<!--Release 34-->
+<!--Version Dated as of 17/Oct/2015 14:37:40-->
+<!--GDS Queue Universal Record Modify For Apollo(1V) Request-->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:com="http://www.travelport.com/schema/common_v34_0"
+                  xmlns:univ="http://www.travelport.com/schema/universal_v34_0">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <univ:UniversalRecordModifyReq AuthorizedBy="user" ReturnRecord="false"
+                                       TargetBranch="TRGT_BRCH" Version="0">
+            <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+            <com:ContinuityCheckOverride Key="efNRKhPVTM6eY5yX/wRkdQ==">Check
+            </com:ContinuityCheckOverride>
+            <univ:RecordIdentifier ProviderCode="1V"
+                                   ProviderLocatorCode="V3KSLE"
+                                   UniversalLocatorCode="DXGVD5"/>
+            <univ:UniversalModifyCmd Key="duMSKhPVTM6eY5yX/wRkdQ==">
+                <univ:UniversalAdd>
+                    <com:GeneralRemark Key="duNRKhPVTM6eY5yX/wRkeP=="
+                                       ProviderCode="1V" SupplierCode="QF"
+                                       SupplierType="Air" TypeInGds="Basic">
+                        <com:RemarkData>General data</com:RemarkData>
+                    </com:GeneralRemark>
+                </univ:UniversalAdd>
+            </univ:UniversalModifyCmd>
+            <univ:QueueNextModifiers
+                QueueSessionToken="F9C324B90A07761E802798A8641B5DA3"
+                ReQueueCurrent="false"/>
+        </univ:UniversalRecordModifyReq>
+    </soapenv:Body>
+</soapenv:Envelope>

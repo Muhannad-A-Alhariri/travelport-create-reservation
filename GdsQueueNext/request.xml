@@ -1,0 +1,16 @@
+<!--Release 34-->
+<!--Version Dated as of 17/Oct/2015 14:37:34-->
+<!--GDS Queue Next For Galileo(1G) Request-->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gds:GdsNextOnQueueReq
+            xmlns:com="http://www.travelport.com/schema/common_v34_0"
+            xmlns:gds="http://www.travelport.com/schema/gdsQueue_v34_0"
+            AuthorizedBy="user"
+            QueueSessionToken="AD0BD0E20A07761F5DE455D8DE15CFCC"
+            RemoveCurrent="false" TargetBranch="TRGT_BRCH">
+            <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+        </gds:GdsNextOnQueueReq>
+    </soapenv:Body>
+</soapenv:Envelope>

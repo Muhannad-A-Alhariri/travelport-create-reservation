@@ -1,0 +1,228 @@
+<!--Version Dated as of 17/Oct/2015 14:37:31-->
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP:Body>
+        <gdsQueue:GdsQueuePlaceRsp
+            xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0"
+            xmlns:gdsQueue="http://www.travelport.com/schema/gdsQueue_v34_0"
+            ResponseTime="2683" TraceId="trace"
+            TransactionId="AD0B47230A07761F5DE455D8E065EC5B">
+            <common_v34_0:ResponseMessage Code="7020" Type="Info">Booking
+                successfully placed on Queue 20 for Pseudo City 5X19
+            </common_v34_0:ResponseMessage>
+            <universal:UniversalRecord
+                xmlns:air="http://www.travelport.com/schema/air_v34_0"
+                xmlns:universal="http://www.travelport.com/schema/universal_v34_0"
+                LocatorCode="DXFNJJ" Status="Active" Version="2">
+                <common_v34_0:BookingTraveler DOB="1969-09-17" Gender="M"
+                                              Key="gr8AVWGCR064r57Jt0+8bA=="
+                                              TravelerType="ADT">
+                    <common_v34_0:BookingTravelerName First="Jack" Last="Smith"
+                                                      Prefix="Mr"/>
+                    <common_v34_0:DeliveryInfo>
+                        <common_v34_0:ShippingAddress
+                            Key="lTsibivTQdSagEmN1V2XhA==">
+                            <common_v34_0:AddressName>Smiths
+                            </common_v34_0:AddressName>
+                            <common_v34_0:Street>2914 N. Dakota Avenue
+                            </common_v34_0:Street>
+                            <common_v34_0:City>Denver</common_v34_0:City>
+                            <common_v34_0:State>CO</common_v34_0:State>
+                            <common_v34_0:PostalCode>80206
+                            </common_v34_0:PostalCode>
+                            <common_v34_0:Country>US</common_v34_0:Country>
+                            <common_v34_0:ProviderReservationInfoRef
+                                Key="htrfNpmQSl+yzgl3hrAgHw=="/>
+                        </common_v34_0:ShippingAddress>
+                        <common_v34_0:ProviderReservationInfoRef
+                            Key="htrfNpmQSl+yzgl3hrAgHw=="/>
+                    </common_v34_0:DeliveryInfo>
+                    <common_v34_0:PhoneNumber AreaCode="303" CountryCode="1"
+                                              Key="bVSs8tLfRRWK65zQDakASQ=="
+                                              Location="DEN" Number="3333333"
+                                              Type="None">
+                        <common_v34_0:ProviderReservationInfoRef
+                            Key="htrfNpmQSl+yzgl3hrAgHw=="/>
+                    </common_v34_0:PhoneNumber>
+                    <common_v34_0:Email EmailID="test@travelport.com"
+                                        Key="KyvHle02TdaujbjOCZ0d9Q=="
+                                        Type="Home">
+                        <common_v34_0:ProviderReservationInfoRef
+                            Key="htrfNpmQSl+yzgl3hrAgHw=="/>
+                    </common_v34_0:Email>
+                    <common_v34_0:SSR Carrier="QF"
+                                      FreeText="P/US/F1234567/US/17SEP69/M/24SEP15/SMITH/JACK -1SMITH/JACKMR"
+                                      Key="+5x5xfQmRVGhwHtTOkvqLg=="
+                                      ProviderReservationInfoRef="htrfNpmQSl+yzgl3hrAgHw=="
+                                      Status="HK" Type="DOCS"/>
+                    <common_v34_0:SSR Carrier="QF" FreeText="0819902412572C1"
+                                      Key="ffFfx29MTQyNDuD7gqcaOA=="
+                                      ProviderReservationInfoRef="htrfNpmQSl+yzgl3hrAgHw=="
+                                      SegmentRef="WOMIafkiRkSvAyJ/EI5AUw=="
+                                      Status="HK" Type="TKNE"/>
+                    <common_v34_0:Address Key="KI0qiCSLSCuvajin9fd0RA==">
+                        <common_v34_0:AddressName>Smiths
+                        </common_v34_0:AddressName>
+                        <common_v34_0:Street>2914 N. Dakota Avenue
+                        </common_v34_0:Street>
+                        <common_v34_0:City>Denver</common_v34_0:City>
+                        <common_v34_0:State>CO</common_v34_0:State>
+                        <common_v34_0:PostalCode>80206</common_v34_0:PostalCode>
+                        <common_v34_0:Country>US</common_v34_0:Country>
+                        <common_v34_0:ProviderReservationInfoRef
+                            Key="htrfNpmQSl+yzgl3hrAgHw=="/>
+                    </common_v34_0:Address>
+                </common_v34_0:BookingTraveler>
+                <common_v34_0:ActionStatus Key="jZKvVKnmSruypQYO+7NAmw=="
+                                           ProviderCode="1G"
+                                           ProviderReservationInfoRef="htrfNpmQSl+yzgl3hrAgHw=="
+                                           Type="ACTIVE">
+                    <common_v34_0:Remark>SYD 13AUG1007Z WS AG
+                    </common_v34_0:Remark>
+                </common_v34_0:ActionStatus>
+                <universal:ProviderReservationInfo
+                    CreateDate="2015-08-13T10:06:53.850+00:00"
+                    HostCreateDate="2015-08-13" Key="htrfNpmQSl+yzgl3hrAgHw=="
+                    LocatorCode="BQ3MTG"
+                    ModifiedDate="2015-08-13T10:07:44.571+00:00"
+                    OwningPCC="5X19" ProviderCode="1G"/>
+                <air:AirReservation CreateDate="2015-08-13T10:06:52.567+00:00"
+                                    LocatorCode="DXFNJK"
+                                    ModifiedDate="2015-08-13T10:07:44.571+00:00">
+                    <common_v34_0:SupplierLocator
+                        CreateDateTime="2015-08-13T10:06:00.000+00:00"
+                        ProviderReservationInfoRef="htrfNpmQSl+yzgl3hrAgHw=="
+                        SupplierCode="QF" SupplierLocatorCode="5SA3AF"/>
+                    <air:DocumentInfo>
+                        <air:TicketInfo
+                            AirPricingInfoRef="vELJvFMaQhKIq27WqAMeZg=="
+                            BookingTravelerRef="gr8AVWGCR064r57Jt0+8bA=="
+                            Number="0819902412572" Status="N">
+                            <common_v34_0:Name First="Jack" Last="Smith"
+                                               Prefix="Mr"/>
+                        </air:TicketInfo>
+                    </air:DocumentInfo>
+                    <common_v34_0:BookingTravelerRef
+                        Key="gr8AVWGCR064r57Jt0+8bA=="/>
+                    <common_v34_0:ProviderReservationInfoRef
+                        Key="htrfNpmQSl+yzgl3hrAgHw=="/>
+                    <air:AirSegment ArrivalTime="2015-09-24T08:05:00.000+10:00"
+                                    CabinClass="Economy" Carrier="QF"
+                                    ChangeOfPlane="false" ClassOfService="Q"
+                                    DepartureTime="2015-09-24T06:30:00.000+10:00"
+                                    Destination="MEL" Distance="456"
+                                    ETicketability="Yes" Equipment="332"
+                                    FlightNumber="405" Group="0"
+                                    GuaranteedPaymentCarrier="No"
+                                    Key="WOMIafkiRkSvAyJ/EI5AUw=="
+                                    LinkAvailability="true"
+                                    OptionalServicesIndicator="false"
+                                    Origin="SYD" ParticipantLevel="Secure Sell"
+                                    ProviderCode="1G"
+                                    ProviderReservationInfoRef="htrfNpmQSl+yzgl3hrAgHw=="
+                                    Status="HK" TravelTime="95">
+                        <air:FlightDetails
+                            ArrivalTime="2015-09-24T08:05:00.000+10:00"
+                            DepartureTime="2015-09-24T06:30:00.000+10:00"
+                            Destination="MEL" DestinationTerminal="1"
+                            Equipment="332" FlightTime="95"
+                            Key="5C7ppAaiRkycL7EXBQqAXg==" Origin="SYD"
+                            OriginTerminal="3" TravelTime="95"/>
+                        <common_v34_0:SellMessage>DEPARTS SYD TERMINAL 3 -
+                            ARRIVES MEL TERMINAL 1
+                        </common_v34_0:SellMessage>
+                    </air:AirSegment>
+                    <air:AirPricingInfo AirPricingInfoGroup="1"
+                                        ApproximateBasePrice="USD95.90"
+                                        ApproximateTotalPrice="USD116.38"
+                                        BasePrice="AUD131.15"
+                                        ETicketability="Yes" Exchangeable="true"
+                                        IncludesVAT="false"
+                                        Key="vELJvFMaQhKIq27WqAMeZg=="
+                                        LatestTicketingTime="2015-08-13T23:59:00.000-07:00"
+                                        PlatingCarrier="QF"
+                                        PricingMethod="GuaranteedUsingAirlinePrivateFare"
+                                        PricingType="StoredFare"
+                                        ProviderCode="1G"
+                                        ProviderReservationInfoRef="htrfNpmQSl+yzgl3hrAgHw=="
+                                        Taxes="AUD28.01" Ticketed="true"
+                                        TotalPrice="AUD159.16"
+                                        TrueLastDateToTicket="2015-08-13T23:59:00.000-07:00">
+                        <air:FareInfo Amount="AUD131.15" Destination="MEL"
+                                      EffectiveDate="2015-08-13T00:00:00.000-07:00"
+                                      FareBasis="QDEAL"
+                                      Key="bKZf58eKRSGdhdkYa6P8+g=="
+                                      NotValidAfter="2015-09-24"
+                                      NotValidBefore="2015-09-24" Origin="SYD"
+                                      PassengerTypeCode="ADT"
+                                      PrivateFare="AirlinePrivateFare"
+                                      PseudoCityCode="PCC">
+                            <air:ContractCode Code="9684" ProviderCode="1G"/>
+                            <common_v34_0:Endorsement Value="NON-REF/NON-END"/>
+                            <common_v34_0:Endorsement
+                                Value="SPECIAL FARE CONDITIONS"/>
+                            <air:BaggageAllowance>
+                                <air:NumberOfPieces>1</air:NumberOfPieces>
+                            </air:BaggageAllowance>
+                        </air:FareInfo>
+                        <air:BookingInfo BookingCode="Q" CabinClass="Economy"
+                                         FareInfoRef="bKZf58eKRSGdhdkYa6P8+g=="
+                                         SegmentRef="WOMIafkiRkSvAyJ/EI5AUw=="/>
+                        <air:TaxInfo Amount="AUD8.01" Category="QR"
+                                     Key="AFYBRvVUQp2JizjYeiVtOA=="/>
+                        <air:TaxInfo Amount="AUD5.53" Category="WG"
+                                     Key="2hw1IIsERRq8HaxBt0O1OA=="/>
+                        <air:TaxInfo Amount="AUD14.47" Category="UO"
+                                     Key="J1/1PbhOT0KICaHiDBVHJQ=="/>
+                        <air:FareCalc>SYD QF MEL 131.15QDEAL AUD131.15END
+                        </air:FareCalc>
+                        <air:PassengerType
+                            BookingTravelerRef="gr8AVWGCR064r57Jt0+8bA=="
+                            Code="ADT">
+                            <air:FareGuaranteeInfo
+                                GuaranteeType="GuaranteedUsingAirlinePrivateFare"/>
+                        </air:PassengerType>
+                        <common_v34_0:BookingTravelerRef
+                            Key="gr8AVWGCR064r57Jt0+8bA=="/>
+                        <air:TicketingModifiersRef
+                            Key="hvE+rEXTQHmTNMsiwDJdIw=="/>
+                    </air:AirPricingInfo>
+                    <air:TicketingModifiers Key="hvE+rEXTQHmTNMsiwDJdIw=="
+                                            PlatingCarrier="QF">
+                        <air:DocumentSelect IssueElectronicTicket="true"/>
+                    </air:TicketingModifiers>
+                </air:AirReservation>
+                <common_v34_0:GeneralRemark
+                    CreateDate="2015-08-13T10:06:00.000+00:00"
+                    Key="Tmoc18koSYavHQRHbk4eDA=="
+                    ProviderReservationInfoRef="htrfNpmQSl+yzgl3hrAgHw=="
+                    TypeInGds="Basic">
+                    <common_v34_0:RemarkData>DELETE_UR_MODIFY
+                    </common_v34_0:RemarkData>
+                </common_v34_0:GeneralRemark>
+                <common_v34_0:AgencyInfo>
+                    <common_v34_0:AgentAction ActionType="Created"
+                                              AgencyCode="AGCY_CODE"
+                                              AgentCode="AGNT_CODE"
+                                              BranchCode="BRCH_CODE"
+                                              EventTime="2015-08-13T10:06:46.099+00:00"/>
+                    <common_v34_0:AgentAction ActionType="Modified"
+                                              AgencyCode="AGCY_CODE"
+                                              AgentCode="AGNT_CODE"
+                                              BranchCode="BRCH_CODE"
+                                              EventTime="2015-08-13T10:08:57.691+00:00"/>
+                    <common_v34_0:AgentAction ActionType="Ticketed"
+                                              AgencyCode="AGCY_CODE"
+                                              AgentCode="AGNT_CODE"
+                                              BranchCode="BRCH_CODE"
+                                              EventTime="2015-08-13T10:07:44.415+00:00"/>
+                </common_v34_0:AgencyInfo>
+                <common_v34_0:FormOfPayment Key="jwt2mcK1Qp27I2xfpcCtAw=="
+                                            ProfileKey="EOhxanJ4ST+/r16oh7EAOw=="
+                                            Reusable="false" Type="Cash">
+                    <common_v34_0:ProviderReservationInfoRef
+                        Key="htrfNpmQSl+yzgl3hrAgHw=="/>
+                </common_v34_0:FormOfPayment>
+            </universal:UniversalRecord>
+        </gdsQueue:GdsQueuePlaceRsp>
+    </SOAP:Body>
+</SOAP:Envelope>
